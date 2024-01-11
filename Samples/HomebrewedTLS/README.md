@@ -142,7 +142,7 @@ conn.connect(("127.0.0.1", 12345))
 
 cert = conn.getpeercert()  # 5) Fetch the server's Certificate
 pprint.pprint(cert)
-conn.sendall(b"HEAD / HTTP/1.0\r\nHost: poop\r\n\r\n")  # 6) Send & receive data secured with TLS
+conn.sendall(b"HEAD / HTTP/1.0\r\nHost: works\r\n\r\n")  # 6) Send & receive data secured with TLS
 pprint.pprint(conn.recv(1024).split(b"\r\n"))
 ```
 
