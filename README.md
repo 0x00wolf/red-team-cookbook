@@ -251,7 +251,7 @@ Tasting notes:
 
 >All Your Base Are Belong To Us:**
 
--Cats
+   - Cats
 
 ---
 
@@ -292,7 +292,7 @@ Tasting notes:
 
 >If you cannot get the knowledge by fair means, it must be gained by subterfuge, including the employment of spies and double agents.
 
--Sun Tzu
+   - Sun Tzu
 
 ---
 
@@ -352,7 +352,7 @@ Tasting notes:
 
 >Oh, I'm gonna hit you so hard, your children will be born bruised!
 
--Tank Girl
+ - Tank Girl
 
 ---
 
@@ -416,7 +416,7 @@ Tasting notes:
 
 >**WE ARE THE BORG. YOU WILL BE ASSIMILATED. YOUR UNIQUENESS WILL BE ADDED TO OUR COLLECTIVE. RESISTANCE IS FUTILE.**
 
--The Collective
+   - The Collective
 
 ---
 
