@@ -1,6 +1,6 @@
 # Standalone Potentially Unwanted Programs (PUPs)
 
-Within the RTCB, you will learn how to create a series of standalone PUPs, using Python and some external libraries. You will also learn how to refactor them into the **WorkerRAT** exploit kit, which is a collection of PUPs that can be remotely controlled by a command-and-control (C2) server. PUPs are programs that perform unwanted or malicious actions on the target system or network, such as logging keystrokes, stealing credentials, dropping malware, or exfiltrating data. PUPs are often disguised as legitimate or useful software, or bundled with other programs, to trick the user into installing or running them. PUPs can also be delivered through phishing emails, drive-by downloads, or exploit kits, which take advantage of vulnerabilities in the target system or application.
+Within the RTCB, you will learn how to create a series of standalone PUPs, using Python and some external libraries. PUPs are programs that perform unwanted or malicious actions on the target system or network, such as logging keystrokes, stealing credentials, dropping malware, or exfiltrating data. PUPs are often disguised as legitimate or useful software, or bundled with other programs, to trick the user into installing or running them. PUPs can also be delivered through phishing emails, drive-by downloads, or exploit kits, which take advantage of vulnerabilities in the target system or application. The RTCB will provide you with ample knowledge to programmatically execute all of the aforementioned techniques. You will also learn how to refactor modules into the **WorkerRAT**, allowing to add an arbitrary number of new features without added complexity. 
 
 As you progress through the RTCB you will incorporate your own selection of PUPs into your iteration of WorkerRAT, and the corresponding components for the Mothership Command Server.
 
@@ -8,7 +8,7 @@ As you progress through the RTCB you will incorporate your own selection of PUPs
 
 **1) Keyloggers:** 
     
-- A program that records the keystrokes of the user and saves them to a file or sends them to a C2. You will create eight variations of this PUP, using different methods to capture the keyboard input. Four of them will be in Python, using the pynput, keyboard, pyHook, and ctypes modules. The other four will be in C, using the Windows API, the X11 API, the ncurses library, and the libpcap library.
+- A program that records the keystrokes of the user and saves them to a file or sends them to a C2. The RTCB contains eight variations of this PUP, using different methods to capture the keyboard input in C and Python. Four of them will be in Python, using the pynput, keyboard, pyHook, and ctypes modules. The other four will be in C, using the Windows API, the X11 API, the ncurses library, and the libpcap library.
 
 **2) Droppers:** 
     
@@ -34,13 +34,14 @@ As you progress through the RTCB you will incorporate your own selection of PUPs
 
 - A program that streams the webcam and microphone of the user to a C2, to spy on the user’s activities and surroundings. You will create one variation of this PUP in Python, using the cv2, pyaudio, and socket modules to access and stream the webcam and microphone data. 
 
-By the end of this section, you will have a solid foundation in systems programming for potentially unwanted reasons, and a powerful arsenal of PUPs and C2s that you can use for your red-team exercises. You will also learn how to test, debug, and deploy your PUPs and C2s, using the virtual lab you set up in Part 1. Remember, the goal of this book is to teach you how to develop a robust toolset for legitimate and ethical red-teaming, to emulate real-world threat actors and improve the security of your systems and networks. Do not use these PUPs and C2s for any illegal or malicious purposes, as you may face serious legal consequences. Always obtain the proper authorization and consent before conducting any red-team exercise, and follow the ethical hacking principles and guidelines. Happy hacking!
+By the end of this section, you will have a solid foundation in systems programming for potentially unwanted reasons, and a powerful arsenal of PUPs that can use for red-team exercises. You will also learn how to connect your PUPstest, debug, and deploy your PUPs and C2s, using the virtual lab you set up in Part 1. This section will conclude with demonstrating how to refactor your PUPs into modules ifor **WorkerRAT**, allowing you to add an arbitrary number of new features as time goes on. 
 
 # Sample PUPs
 
 ## First, Set up a Virtual Environments to Test your PUPs
 
-Before you start developing your own potentially unwanted programs (PUPs), you need to set up a safe and isolated environment where you can test them without affecting your main system or network. The RTCB suggests creating **virtual environments** specifc to the packages required for each PUP to simplify compiling with Nuitka. Venvs are self-contained directories that contain a Python installation and any packages you need for your project. Virtual environments allow you to create and switch between multiple Python environments, each with its own dependencies and settings. This way, you can avoid conflicts between different versions of packages or libraries, and keep your system clean and secure.
+Before you start developing your own potentially unwanted programs (PUPs), you need to set up a safe and isolated environment where you can test them without affecting your main system or network. On top of this, the RTCB suggests creating **virtual environments** specifc to the packages required for each PUP to simplify compiling with Nuitka. Venvs are self-contained directories that contain a Python installation and any packages you need for your project. Virtual environments allow you to create and switch between multiple Python environments, each with its own dependencies and settings. This way, you can avoid conflicts between different versions of packages or libraries, and keep your system clean and secure.
+
 To create a virtual environment, you need the **venv** module, which is included in the standard library of Python 3. You can use the following command to create a new virtual environment in the specified directory:
 
 ```bash
