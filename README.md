@@ -32,64 +32,58 @@ The RTCB is broken into six parts:
 
 ---
 
-### **Part 1: Proper Prior Preparation Prevents Pi$$-Poor Performance** 
+### **Part 1: Preparation (Proper Prior Preparation Prevents Pi$$-Poor Performance)** 
 
 
-Part one contains tutorials that explain how to use the Python libraries, programmatic techniques, and tools that are required to build a fully functioning exploit kit and command center from scratch with OOP design patterns. Some example content includes: learning how to code your own domain name system (DNS) server, which readers will later use to create a rogue DNS and exfiltrate data with a DNS tunnel. You will also learn how to become your own root certificate authority and implement your own public key infrastructure (PKI), which you will use to mask traffic to and from your command and control (C2) server via transport layer security (TLS), hiding your communications among regular HTTPS traffic.
-
-In Part 1, readers will also be guided through setting up a virtual lab, with QEMU/KVM and Virt-Manager, to test their exploits and command servers as they progress through the RTCB
+Part one contains tutorials that explain how to use the Python libraries, programmatic techniques, and tools that are required to build a fully functioning exploit kit and command center from scratch with OOP design patterns. Rather than cover any fundamentals (like using iterators & variables), a series of short examples with explanations will cover the Objects and Methods that include more complicated elements (like concurrent programming), so that RTCB readers will have a base reference point to understand the code while working through the recipes. Part 1 will also help RTCB readers readers will also be guided through setting up a virtual lab, with QEMU/KVM and Virt-Manager, to test their exploits and command servers as they progress through the RTCB
 
 ---
 
-### **Part 2: Reconnaissance; While Network Programming, Do Bad Stuff** 
+### **Part 2: Reconnaissance** 
 
 
-Part 2 features a deep dive into different options for network programming using Python, including sockets, SSL, SocketServer, Twisted, Requests, Flask, Scapy, and more. You will manually create servers to receive reverse shells, learn to craft packets layer by layer, and enumerate networks - discovering devices that won’t respond to internet control message protocol (ICMP) requests. You will also learn how to automate encrypting and decrypting data you send across insecure networks with RSA-wrapped-AES and TLS.
-
-An example from Part 2 is included below: Mini-VPN-Chat, a manual implementation of an encrypted two-way secure communication channel to connect devices across insecure networks. Mini-VPN-Chat uses both TLS and a manually AES-encrypted payload (double encryption). Part 3: Exploitation, Obfuscation, & Basic Tooling
+Part 2 features a deep dive into different options for network programming using Python, including sockets, SSL, SocketServer, Twisted, Requests, Flask, Scapy, and more. You will manually create servers to receive reverse shells, learn to craft packets layer by layer, and enumerate networks - discovering devices that won’t respond to internet control message protocol (ICMP) requests.
 
 ---
 
-### **Part 3: Exploitation, Obfuscation, & Basic Tooling**
+## **Part 3: Arsenal**
 
+### 3a: Potentiall Unwanted Programs (PUPs)
 
-In Part 3, you will begin to develop standalone versions of different common potentially unwanted programs (PUPs), as well as start developing the skeleton of your exploit kit. Part 3 will introduce a wide variety of tools for surveillance and data exfiltration - learning how to encrypt and mask traffic.
+Part 3 is dedicated to building an arsenal of red-teaming tools. PUPs will be featured in C and Python, and will represent a variety of methods for accomplishing the programmatic function of each on both Windows & Linux.
 
-Introduced in Part 3, and central to the exploit kit, is the OOP WorkerRAT and C2 framework (the Mothership Connection). Moving forward, every component will be constructed as a standalone tool, and then used to extend these basic models.
+### 3b: Destroy, Alter, Deny, & Mine
 
-The WorkerRAT employs three object-oriented design patterns covered in Part 1: Worker-Slave, Consumer-Producer, and Factory. The implementation of these patterns enables easy extension and customization. 
+Part 3b introduces readers to tools that are specifically designed to cause damage on networks and hosts. The author believes that the only difference between a full disk encryption (FDE) tool and ransomware is its creator's intent when they developed the program. Don't do bad things. 
+
+You will gain a deep understanding of the programmatic elements that are employed in the development of ransomware, as well as learn how to build network stress-test tools in C and Python (DoS). Concluding with automating and installing XMRminer to hijack hosts and turn them into crypto miners for malicious actors. 
+
+### 3c: Remote Access Tool
+
+Introduced in Part 3, and central to the exploit kit, is the OOP WorkerRAT. Moving forward, every component will be constructed as a standalone tool, and then used to extend these basic models. The WorkerRAT employs a few object-oriented design patterns to enable easy extension and customization. 
 
 ---
 
-### **Part 4: Privilege Escalation, Lateral Movement, & Exfiltration**
+### **Part 4: Encrypting & Covert Communications**
 
 
-Part 4 will teach you how to perform privilege escalation, lateral movement, and data exfiltration on your target network. You will master various techniques and tools for these tasks, such as credential theft, keylogging, clipboard hijacking, screen capture, audio and video recording, and DNS tunneling. You will also learn how to secure your data with RSA-wrapped-AES encryption and embed your public key into your RAT. You will then upgrade your WorkerRAT and C2 framework to use these modules to stealthily extract data and compromise the host.
-
----
-
-### **Part 5: Deny, Destroy, & Alter** 
-
-
-Part 5 introduces readers to tools that are specifically designed to cause damage on networks and hosts. You will gain a deep understanding of the programmatic elements that are employed in the development of ransomware, as well as learn how to build network stress-test tools in C and Python (DoS). Part 5 concludes with automating and installing XMRminer to hijack hosts and turn them into crypto miners for malicious actors.
-
-The principle of Part 5 is to introduce the programmatic components of these tools to develop a better understanding. The author believes that the only difference between a full disk encryption (FDE) tool and ransomware is the author’s intent when they developed the program.
+Part 4 will teach you how to encrypt your communications like an APT. You will learn how to manually secure your data with RSA-wrapped-AES encryption, embedding your public key into your RAT. You will learn to add an additional layer of encryption by homebrewing TLS by becoming your own Certificate Authority. You will develop code for a server side DNS- capable of extracting information from networks stealthily via a DNS Tunnel. You will then upgrade your WorkerRAT and C2 framework to use these modules to stealthily extract data and compromise the host.
 
 ___
 
-### **Part 6: The Mothership Connection C2 & Advanced Exfiltration**
+### **Part 5: Advanced Command & Control**
 
 
-Part 6 will focus on expanding and improving the C2 framework. At this point, a well-developed exploit kit is in place, and the next step is to improve the delivery, control, and exfiltration mechanisms.
+Part 5 will focus on expanding and improving the C2 framework. At this point, a well-developed exploit kit is in place, and the next step is to improve the delivery, control, and exfiltration mechanisms.
 
-The Mothership Connection is the author’s solution. It features a Flask backend, SQLAlchemy for botnet databasing, DNS servers for data exfiltration and rogue DNS, a homegrown certificate authority, the ability to encrypt and package payloads for drive-by-downloads, and many more features. Front-end development will feature JavaScript and Jinja templates to create a botnet admin console. The ultimate goal of Part 6 is to leave readers with a robust and full-featured command and control server, and the knowledge to go out and build their own unique C2s.
+This section will show you how to code a Flask backend using an NGINX HTTP server in a Docker Container. You will implement SQLAlchemy ORM for botnet databasing, upgrade your DNS server to be able to act as a Rogue DNS, encrypt & package payloads for drive-by-downloads, and many more features. Front-end development will feature JavaScript and Jinja templates to create a botnet admin console. The ultimate goal of Part 5 is to leave readers with a robust and full-featured command and control server, and the knowledge to go out and build their own unique C2s.
 
 ---
 
-### **Part 7:  Using AI to Become Significantly More Dangerous**
+### **Part 6:  Using AI to Become Significantly More Dangerous**
 
 
-Part 7 intends to provide readers with the tools and techniques to incorporate AI into their red-teaming and penetration testing workflow, to significantly boost their productivity and effectiveness. Areas of focus will include strategies for implementing AI into your research process, an introduction to some incredibly useful tools, and an overview of prompt-engineering.
+Part 6 intends to provide readers with the tools and techniques to incorporate AI into their red-teaming and penetration testing workflow, to significantly boost their productivity and effectiveness. Areas of focus will include strategies for implementing AI into your research process, how to obtain the best results, an introduction to some  useful tools, and an overview of prompt-engineering.
 
 Included in this chapter will also be the final module for the C2 framework, an AI automated MalSpammer, however the code is intentionally broken to prevent misuse. This is a tool intended for red-team engagements that include phishing attacks on corporate emails. If it’s a tool you’d find a legitimate use for at work, by all means find the bug!
 
@@ -113,6 +107,9 @@ ___
 # Examples Articles & Code:
 
 **Part 1:** [Homebrewed TLS/SSL & Becoming a Root Certificate Authority](https://github.com/0x00wolf/red-team-cookbook/tree/main/part_1/TLS_root_CA/README.md)
+
+
+# **WORKING OUTLINE:**
 
 ---
 
@@ -260,20 +257,30 @@ Tasting notes:
 
 ---
 
-1) Scapy: A Python module that allows you to manipulate network packets and perform various network attacks.
-2) Arp Scan: A technique that uses the Address Resolution Protocol (ARP) to discover the IP and MAC addresses of devices on a local network.
-3) ICMP Scan: A technique that uses the Internet Control Message Protocol (ICMP) to ping devices on a network and check their availability.
-4) Port Scan: A technique that scans the ports of a target device and identifies the services running on them.
-5) OS Fingerprinting: A technique that analyzes the network packets of a target device and determines its operating system and version.
-6) Service Discovery: A technique that probes the services running on a target device and determines their version and configuration.
-7) ARP Poisoning & MITM: A technique that spoofs the ARP cache of devices on a local network and redirects their traffic to an attacker-controlled device, allowing the attacker to intercept and modify the data.
-8) Socket Programming & SSL: A technique that allows you to create and manage network connections and encrypt them using the Secure Sockets Layer (SSL) protocol.
-9) Threaded Sockets, and ThreadPoolExecutor, and SocketServer: A technique that allows you to handle multiple network connections concurrently using threads.
-10) Threaded File Hosting class: A class that allows you to host and serve files over the network using threads to many clients asynchronously.
-11) SocketServer File Hosting class: A class that allows you to host and serve files over the network using the SocketServer module.
-12) Basic command and control (C2): A server that allows you to manage and control multiple compromised devices remotely by setting commands.
-13) ET Phone Home: HTTP callbacks: A technique that allows the compromised devices to communicate with the C2 server using HTTP requests and responses.
-14) Reverse Shell(s): A technique that allows you to execute commands on a compromised device remotely, using a shell program that connects back to the C2 server.
+## **While Network-Programming, Do Bad Stuff**
+
+**1) Scapy** 
+   - A Python module that allows you to manipulate network packets and perform various network attacks.
+**2) Arp Scaning** 
+   - A technique that uses the Address Resolution Protocol (ARP) to discover the IP and MAC addresses of devices on a local network.
+**3) ICMP Scanning** 
+   - A technique that uses the Internet Control Message Protocol (ICMP) to ping devices on a network and check their availability.
+**4) Port Scan** 
+   - A technique that scans the ports of a target device and identifies the services running on them.
+**5) OS Fingerprinting**: 
+   - A technique that analyzes the network packets of a target device and determines its operating system and version.
+**6) Service Discovery**: 
+   - A technique that probes the services running on a target device and determines their version and configuration.
+**7) ARP Poisoning & MITM**: 
+   - A technique that spoofs the ARP cache of devices on a local network and redirects their traffic to an attacker-controlled device, allowing the attacker to intercept and modify the data.
+**8) Socket Programming & SSL** 
+   - A technique that allows you to create and manage network connections and encrypt them using the Secure Sockets Layer (SSL) protocol.
+**9) Threaded Sockets, and ThreadPoolExecutor, and SocketServer**:
+   - A technique that allows you to handle multiple network connections concurrently using threads.
+**10) Basic command and control (C2)**:
+   - A server that allows you to manage and control multiple compromised devices remotely by setting commands.
+**13) HTTP callbacks**:
+   - A technique that allows the compromised devices to communicate with the C2 server using HTTP requests and responses.
 
 ---
 
@@ -292,84 +299,56 @@ Tasting notes:
 ---
 
 ## **Potentially Unwanted Programs (PUPs)**
+
 **1) Droppers**
      
-**1) Stealer:**
-
-A program that steals sensitive information from the target system, such as tokens, passwords, databases, or files. You will use the sqlite3, re, os, system, shutil, win32crypt, and pywin32 modules to access and extract the information.
-
-Features:
-   - Browser Passwords & Cookies
-   - Windows & Linux Password Files
-   - os.path.expanduser() regex easter-egg hunt:
-     - regexs in os.path.expanduser()
-       - Emails 
-       - Phone Numbers
-       - 'Password'
-       - credit card number
-       - Crypto Strings 
-     - Routing Tables
-     - Mac Tables
-   - Device Fingerprinting:
-     - Hostname
-     - Localnet IPv4 address
-     - Inet Connection?
-     - if connection IPify API for public IP
-     - Subnet Mask  # enumerate local devices and collect information on them (maybe include device fingerprinting))
-     - UUID # Generate a UUID for authentication and database for c2 botnet CRUD
-     - ETC # definitely forgetting things
+**1) Stealers:**
+   - Programs that steals sensitive information from the target system, such as tokens, passwords, databases, or files. 
 
 **2) Key Loggers**
+   - Programs that record the keystrokes of the user and save them to a file or send them to a C2.
 
-Programs that record the keystrokes of the user and save them to a file or send them to a C2. You will create eight variations of this PUP, using different methods to capture the keyboard input. Four of them will be in Python, using the pynput, keyboard, pyHook, and ctypes modules. The other four will be in C, using the Windows API, the X11 API, the ncurses library, and the libpcap library.
+**3) Clippers**
+   - Programs that monitors the clipboard of the user and replaces any copied text with a predefined text, such as a malicious URL or a cryptocurrency address.
 
-**3) Clipper**
-
-A program that monitors the clipboard of the user and replaces any copied text with a predefined text, such as a malicious URL or a cryptocurrency address. You will create two variations of this PUP, using different methods to access and manipulate the clipboard. One of them will be in Python, using the pyperclip module. The other one will be in C, using the GetClipboardData and SetClipboardData functions on Windows, or the XGetSelectionOwner and XSetSelectionOwner functions on Linux.
-
-**4) Screen Grabber**
-
-Programs that capture the screen of the user and save it to a file or send it to a C2. You will create one variation of this PUP in Python, using the PIL and io modules to capture and encode the screen image.
+**4) Screen Grabbers**
+   - Programs that capture the screen of the user and save it to a file or send it to a C2. 
 
 **5) Microphone Recording & Streaming**
-
-Programs that record or stream the microphone of the user to a C2, to spy on the user’s activities and surroundings. You will create one variation of this PUP in Python, using the pyaudio and socket modules to access and stream the microphone data.
+   - Programs that record or stream the microphone of the user to a C2, to spy on the user’s activities and surroundings. 
 
 **6) Webcam Streaming**
+   - Programs that streams the webcam of the user to a C2, to spy on the user’s activities and surroundings.
 
-A program that streams the webcam of the user to a C2, to spy on the user’s activities and surroundings. You will create one variation of this PUP in Python, using the cv2, pyaudio, and socket modules to access and stream the webcam data.
-
+**7) Reverse Shell(s)**
+   - A technique that allows you to execute commands on a compromised device remotely, using a shell program that connects back to the C2 server.
+everse Shells
+ 
 ---
 
 ## **Remote Access Tool**
 
----
+**1) Worker-Slave OOP RAT Skeleton**
 
-**1) Worker-Slave OOP RAT skeleton & Simple Command-Server**  # All code client-side code extends RAT, all server-side code extends C2 server
-
-**2) Download and install a new Slave Module**
+**2) Simple Command-Server**  # All code client-side code extends RAT, all server-side code extends C2 server
 
 **3) Download a File and Execute it**
 
-**4) Automated Vulnerability Scanning & Reporting**
+**4) Download and install a new Slave Module**
+**5) Automated Vulnerability Scanning & Reporting**
 
-**5) Install Python with C dropper to run .py as modules without compiling**
+**6) Install Python with C dropper to run .py as modules without compiling**
 
-**6) Use UPNP to open a public facing port on a router**
+**7) Use UPNP to open a public facing port on a router**
 
-**7) Windows Persistence**
-- Window's Service 
-- Startup Folder
-- Scripts to Run When Browser is Open (if infected, pass)
+**8) Windows Persistence 3 Ways**
 
-**8) Linux Persistence**
-- Systemd service
-- Modifying Bashrc script
-- cronjob
+**8) Linux Persistence 3 Ways**
+
+---
 
 ## **Deny, Destroy, Alter, & Mine**
 
----
 
 Tasting notes:
 
@@ -383,11 +362,8 @@ Tasting notes:
 
 
 **1) DoS Modules**
-   - SYN Flood: A program that sends a large number of TCP SYN packets to a target server, without completing the three-way handshake, to exhaust its resources and prevent legitimate connections. You will create one variation of this PUP, using the socket module in Python, or the raw socket API in C, to craft and send the packets.
-   - HTTP Flood: A program that sends a large number of HTTP requests to a target web server, to overload its processing capacity and bandwidth. You will create one variation of this PUP, using the requests module in Python, or the libcurl library in C, to generate and send the requests.
 
-**2) Ransomware Module**  # Pathbyter v2.0 Update
-
+**2) Ransomware Module**  
 - Generates Session keys
 - In-memory Encryption
 - Multiprocessing pool for Linux
@@ -397,12 +373,9 @@ Tasting notes:
 
 **3) XMRrig:**  
 
-   - Scripted Installation and Configuration: A technique that downloads and installs the XMRig software, which is a high-performance Monero (XMR) miner, and configures it to mine for the attacker’s wallet address. You will learn how to use the requests or urllib modules in Python, or the libcurl or WinINet libraries in C, to download the XMRig binary or source code, and the subprocess or os modules in Python, or the system or CreateProcess functions in C, to execute it. You will also learn how to use the json module in Python, or the json-c library in C, to modify the XMRig configuration file with the attacker’s parameters.
-   - Monitor and Stop When Task Manager is Open (to hide usage): A technique that monitors the system for the presence of the Task Manager process, and stops the XMRig process if it is detected, to hide the CPU and memory usage. You will learn how to use the psutil module in Python, or the psapi or proc libraries in C, to enumerate and terminate the processes.
-
 ---
 
-# Part 4: Encrypting Communications
+# Part 4: Encryption and Covert Communications
 
 **MITRE / CKC:** Reconnaissance > Resource Development > Defense Evasion > Collection > Command and Control > Exfiltration
 
@@ -412,26 +385,32 @@ Tasting notes:
 
 -EF
 
-1) Implement Base64 for binary data transfers: A technique that encodes the binary data into ASCII characters, using the Base64 algorithm, to avoid transmission errors and bypass some filters.
-2) Implement RSA Wrapped AES for communications: A technique that encrypts the communication between the RAT and the C2 server, using a hybrid encryption scheme that combines the RSA and AES algorithms. 
-3) Become Your Own Root CA & Implement TLS Connections: A technique that allows you to create your own root certificate authority (CA) and issue certificates for the RAT and the C2 server, to establish secure TLS connections between compromised devices and your C2. 
-4) Public Key Encryption: A technique that encrypts the communication between the PUP and the C2, using a pair of keys: a public key and a private key. The public key is known to both parties, and can be used to encrypt the data. The private key is known only to the receiver, and can be used to decrypt the data. This way, only the intended receiver can read the data, even if it is intercepted by a third party. You will learn how to hardcode the attacker’s public key into the WorkerRAT, and use the cryptography module to encrypt the data before sending it to the C2. You will also learn how to use the ssl module to encrypt the data again at the transport layer, using the Secure Sockets Layer (SSL) protocol. 
-5) Mini-VPN-Chat, manually implement TLS on top of RSA-Wrapped-AES payloads creating a chat client, in preparation for the upcoming Command & Control chapter.
-
-**5) Update C2 & RAT to use HTTPS Callbacks via SSL**
-
-**6) Modifying Certificate Chains on Windows & Linux**
-
-**7) Hiding Traffic in the Clear - if HTTPS traffic, communicate to mothership**
-
-**8) Exploring Options for Encrypting Reverse shells with SSL (ex: ncat or manually with SSL)**
-
-**9) DNS Tunneling:** A technique that uses the Domain Name System (DNS) protocol to send and receive data covertly, by encoding the data in the DNS queries and responses. This way, the data can bypass the firewall and other network security measures, as DNS is usually allowed and trusted. You will learn how to use the dnspython module to create and parse the DNS messages, and use the socket module to send and receive them over the network. 
-
-
-# **Part 5: Advanced Command & Control**
 
 ---
+
+**1) Base64 for binary data transfers:**
+
+**2) RSA Wrapped AES for communications:** 
+
+**3) Become Your Own Root CA & Implement Homebrewed TLS Connections**
+
+**4) Hardcoded Public Key Encryption**
+
+**6) Mini-VPN-Chat**
+
+**7) Update C2 & RAT to use HTTPS Callbacks via SSL**
+
+**8) Modifying Certificate Chains on Windows & Linux**
+
+**9) Hiding Traffic in the Clear - if HTTPS traffic, communicate to mothership**
+
+**10) Exploring Options for Encrypting Reverse shells with SSL (ex: ncat or manually with SSL)**
+
+**11) DNS Tunneling:** 
+
+---
+
+# **Part 5: Advanced Command & Control**
 
 **Mitre / CKC:** Actions on Objectives > Collection > C&C > Exploitation
 
