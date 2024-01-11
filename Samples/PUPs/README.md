@@ -70,7 +70,7 @@ Now that you have set up your virtual environment, you are ready to start develo
 ---
 
 
-# **Keyloggers 1/5: Capturing Keyboard Input with pynput**
+# **Keyloggers: Capturing Keyboard Input with pynput**
 
 Create & activate a new virtual environment and install the necessary library for this PUP with:
 
