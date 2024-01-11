@@ -253,7 +253,9 @@ ___
 ## **Discovery 
 
 Tasting notes:
+
 >All Your Base Are Belong To Us:**
+
 -Cats
 
 ---
@@ -312,8 +314,11 @@ Tasting notes:
 
 
 Tasting notes:
+
 >'536868682E204265207665777920766577792071756965742C2049276D2068756E74696E672077616262697473'
+
 -EF
+
 ```
 input_string = '53 68 68 68 2E 20 42 65 20 76 65 77 79 20 76 65 77 79 20 71 75 69 65 74 2C 20 49 27 6D 20 68 75 6E 74 69 6E 67 20 77 61 62 62 69 74 73'
 output_string = ''.join([chr(int(x, 16)) for x in input_string.split()])
@@ -402,6 +407,7 @@ Tasting notes:
 ---
 
 Tasting notes:
+
 >Oh, I'm gonna hit you so hard, your children will be born bruised!
 
 -Tank Girl
@@ -438,7 +444,10 @@ Tasting notes:
 **Mitre / CKC:** Actions on Objectives > Collection > C&C > Exploitation
 
 Tasting notes:
+
 >**WE ARE THE BORG. YOU WILL BE ASSIMILATED. YOUR UNIQUENESS WILL BE ADDED TO OUR COLLECTIVE. RESISTANCE IS FUTILE.**
+
+-The Collective
 
 ---
 
