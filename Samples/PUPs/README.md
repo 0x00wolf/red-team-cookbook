@@ -2,37 +2,37 @@
 
 Within the RTCB, you will learn how to create a series of standalone PUPs, using Python and some external libraries. PUPs are programs that perform unwanted or malicious actions on the target system or network, such as logging keystrokes, stealing credentials, dropping malware, or exfiltrating data. PUPs are often disguised as legitimate or useful software, or bundled with other programs, to trick the user into installing or running them. PUPs can also be delivered through phishing emails, drive-by downloads, or exploit kits, which take advantage of vulnerabilities in the target system or application. The RTCB will provide you with ample knowledge to programmatically execute all of the aforementioned techniques. You will also learn how to refactor modules into the **WorkerRAT**, allowing to add an arbitrary number of new features without added complexity. 
 
-As you progress through the RTCB you will incorporate your own selection of PUPs into your iteration of WorkerRAT, and the corresponding components for the Mothership Command Server.
+As you progress through the RTCB you will incorporate your own selection of PUPs into your iteration of WorkerRAT, and the corresponding components for your Command Server.
 
 ## Examples of the PUPs and C2s that you will create working through the RTCB are:
 
 **1) Keyloggers:** 
     
-- A program that records the keystrokes of the user and saves them to a file or sends them to a C2. The RTCB contains eight variations of this PUP, using different methods to capture the keyboard input in C and Python. Four of them will be in Python, using the pynput, keyboard, pyHook, and ctypes modules. The other four will be in C, using the Windows API, the X11 API, the ncurses library, and the libpcap library.
+- A program that records the keystrokes of the user and saves them to a file or sends them to a C2. 
 
 **2) Droppers:** 
     
-- A program that downloads and executes another program from a remote source, such as a URL or a C2. You will create four variations of this PUP, using different methods to download and execute the payload. Two of them will be in Python, using the requests, urllib, subprocess, and os modules. The other two will be in C, using the libcurl library, the WinINet API, the system function, and the CreateProcess function.
+- Programs that downloads and executes another program from a remote source, such as a URL or a C2. 
 
-**3) A Stealer:** 
+**3) Stealers:** 
     
-- A program that steals sensitive information from the target system, such as tokens, passwords, databases, or files. You will create one variation of this PUP in Python, using the sqlite3, shutil, win32crypt, and pywin32 modules to access and extract the information.
+- Programs that steal sensitive information from the target system, such as tokens, passwords, databases, or files. 
 
 **4) Tools for Network and System Fingerprinting:** 
     
-- A program that collects information about the target system, such as the operating system, hardware, network, processes, or users. You will create one variation of this PUP in Python, using the os, platform, psutil, socket, requests, and getpass modules to gather and report the information.
+- A program that collects information about the target system, such as the operating system, hardware, network, processes, or users. 
 
-**5) A Clipper / Crypto-jacker:** 
+**5) Clippers / Crypto-jackers:** 
     
-- A family of programs that monitors the clipboard of the user and replaces any copied text with a predefined text, such as a malicious URL or a cryptocurrency address. You will create two variations of this PUP, using different methods to access and manipulate the clipboard. One of them will be in Python, using the pyperclip module. The other one will be in C, using the GetClipboardData and SetClipboardData functions on Windows, or the XGetSelectionOwner and XSetSelectionOwner functions on Linux.
-
-**6) A Screen Grabber:** 
+- A family of programs that monitors the clipboard of the user and replaces any copied text with a predefined text, such as a malicious URL or a cryptocurrency address.
+  
+**6) Screen Grabbers:** 
     
-- A program that captures the screen of the user and saves it to a file or sends it to a C2. You will create one variation of this PUP in Python, using the PIL and io modules to capture and encode the screen image.
+- Programs that capture the screen of the user and saves it to a file or sends it to a C2. 
 
 **7) Webcam and Microphone Streaming Tools:** 
 
-- A program that streams the webcam and microphone of the user to a C2, to spy on the user’s activities and surroundings. You will create one variation of this PUP in Python, using the cv2, pyaudio, and socket modules to access and stream the webcam and microphone data. 
+- Programs that streams the webcam and microphone of the user to a C2, to spy on the user’s activities and surroundings.
 
 By the end of this section, you will have a solid foundation in systems programming for potentially unwanted reasons, and a powerful arsenal of PUPs that can use for red-team exercises. You will also learn how to connect your PUPstest, debug, and deploy your PUPs and C2s, using the virtual lab you set up in Part 1. This section will conclude with demonstrating how to refactor your PUPs into modules ifor **WorkerRAT**, allowing you to add an arbitrary number of new features as time goes on. 
 
