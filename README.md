@@ -10,13 +10,13 @@
 
 ---
 
-The Red Team Cookbook (RTCB) is a guide to programmatically emulate the methods and techniques APTs employ at every stage of an attack. From enumeration & initial compromise, to establishing an advanced botnet command infrastructure, the author's goal is to amalgamate a comprehensive guide for performing techniques used by APTs in such a way that readers will be able to understand and emulate them in whatever legitimate application their job may require.
+The Red Team Cookbook (RTCB) is a practical guide to programmatically emulate the methods and techniques that advanced persistent threats (APTs) use at every stage of an attack. From enumeration and initial compromise, to establishing an advanced botnet command infrastructure, the author’s goal is to provide a comprehensive guide for performing techniques used by APTs in a way that readers can understand and emulate them for whatever legitimate application their job may require.
 
-The RTCB will focus on using object oriented Python and procedural C to provide programmatic solutions for the techniques malicious actors use to develope malware intended to target enterprise organizations. Readers will develop the ability to explain, execute, and automate a comprehensive array of techniques utilized in cyber-warfare. 
+The RTCB focuses on using object-oriented Python and procedural C to provide programmatic solutions for the techniques that malicious actors use to develop malware that targets enterprise organizations. Readers will develop the ability to explain, execute, and automate a wide range of techniques used in cyber-warfare.
 
-RTCB features a number of tutorials, which are all Arch Linux centric. Readers can use individual components for their learning process, or follow along from cover to cover and be left with a strong comprehension of how APTs do bad things in a sophisticated manner. The RTCB assumes a solid understanding of programming - including OOP, as well as comfortable Linux administration. This is not intended to be a stockpile for script kiddies, but a method of learning and developing FUD tooling for red-team operators and penetration testers.
+The RTCB features a number of tutorials, which are all based on Arch Linux. Readers can use individual components for their learning process, or follow along from start to finish and gain a strong understanding of how APTs conduct sophisticated attacks. The RTCB assumes a solid understanding of programming - including object-oriented programming (OOP), as well as comfortable Linux administration. This is not intended to be a collection of scripts for script kiddies, but a method of learning and developing fully undetectable (FUD) tooling for red-team operators and penetration testers.
 
-Finally, RTCB's final section is devoted to demonstrating how you can use AI to kick your Red-Teaming into hyperdrive.
+The final section of the RTCB is devoted to demonstrating how you can use artificial intelligence (AI) to enhance your red-teaming capabilities.
 
 ---
 
@@ -29,64 +29,62 @@ The RTCB is broken into six parts:
 #### **Part 1: Preparation & Discovery** 
 
 
-Part one contains tutorials explaining how to use the Python libraries, programmatic techniques, and tools that will be required to build a fully functioning exploit kit and Command Center from the sockets up with OOP design patterns. Some example content: Learning how to code your own DNS server, which readers will later use to create a Rogue DNS, and exfiltrate data with a DNS Tunel. You'll also learn how to become your own root Certificate Auhtority and implement your own PKI, which you'll use to mask traffic to-and-from your C2 via TLS, hiding your communications among regular HTTPS traffic. 
+Part one contains tutorials that explain how to use the Python libraries, programmatic techniques, and tools that are required to build a fully functioning exploit kit and command center from scratch with OOP design patterns. Some example content includes: learning how to code your own domain name system (DNS) server, which readers will later use to create a rogue DNS and exfiltrate data with a DNS tunnel. You will also learn how to become your own root certificate authority and implement your own public key infrastructure (PKI), which you will use to mask traffic to and from your command and control (C2) server via transport layer security (TLS), hiding your communications among regular HTTPS traffic.
 
-In Part 1 readers will also be guided through setting up a virtual-lab to test their exploits and command servers as they progress through the RTCB.
+In Part 1, readers will also be guided through setting up a virtual lab, with QEMU/KVM and Virt-Manager, to test their exploits and command servers as they progress through the RTCB
 
 ---
 
 #### **Part 2: Reconnaissance - While Network Programming, Do Bad Stuff** 
 
 
-Part 2 features a deep dive into dfferent options for network programming using Python, including Sockets, SSL, SocketsServer, Twisted, Requests, Flask, Scapy and more. You will manually create servers to receive Reverse Shells, learn to craft packets layer by layer, and enumerate networks - discovering devices that won't respond to ICMP requests. You will also learn how to automate encrypting and decrypting data you send across insecure networks with RSA-Wrapped-AES and TLS.
+Part 2 features a deep dive into different options for network programming using Python, including sockets, SSL, SocketServer, Twisted, Requests, Flask, Scapy, and more. You will manually create servers to receive reverse shells, learn to craft packets layer by layer, and enumerate networks - discovering devices that won’t respond to internet control message protocol (ICMP) requests. You will also learn how to automate encrypting and decrypting data you send across insecure networks with RSA-wrapped-AES and TLS.
 
-**Example from Part 2 included below:** Mini-VPN-Chat, a manual implementation of an encrypted two way secure communication channel to connect devices across insecure networks. MiniVPN-Chat uses both TLS and an manually AES encrypted payload (double double). 
+An example from Part 2 is included below: Mini-VPN-Chat, a manual implementation of an encrypted two-way secure communication channel to connect devices across insecure networks. Mini-VPN-Chat uses both TLS and a manually AES-encrypted payload (double encryption). Part 3: Exploitation, Obfuscation, & Basic Tooling
 
 ---
 
 #### **Part 3: Exploitation, Obfuscation, & Basic Tooling**
 
 
-In Part 3 you will begin to develop standalone versions different common PUPs (Potentially Unwanted Programs), as well as start developing the skeleton of your exploit kit. Part 3 will introduce a wide variety of tools for surveillance and data exfiltration - learning how to encrypt & mask traffic. 
+In Part 3, you will begin to develop standalone versions of different common potentially unwanted programs (PUPs), as well as start developing the skeleton of your exploit kit. Part 3 will introduce a wide variety of tools for surveillance and data exfiltration - learning how to encrypt and mask traffic.
 
-Introduce in Part 3, and central to the exploit kit, is the OOP WorkerRAT and C2 framework (the Mothership Connection). Moving forward,, every component will be constructed as a standalone tool, and then used to extend these basic models. 
+Introduced in Part 3, and central to the exploit kit, is the OOP WorkerRAT and C2 framework (the Mothership Connection). Moving forward, every component will be constructed as a standalone tool, and then used to extend these basic models.
 
-The WorkerRAT employs three object-oriented design patterns covered in Part 1: Worker-Slave, Consumer-Producer, and Factory. The implmentation of these patterns enables easy extension and customization of the WorkerRAT. 
-
-RTCB readers will begin by building simple and flexible C2 Servers, each accomplishing a singular functions (multithreaded file hosting for droppers, a command issuer, etc). In Part 5 the C2 servers will fork, and become a signifcantly more complex singular entity. 
+The WorkerRAT employs three object-oriented design patterns covered in Part 1: Worker-Slave, Consumer-Producer, and Factory. The implementation of these patterns enables easy extension and customization. 
 
 ---
 
 #### **Part 4: Privilege Escalation, Lateral Movement, & Exfiltration**
 
-
+In Part 4, you will learn how to escalate privileges, move laterally across the network, and exfiltrate data from your target. You will use various techniques and tools to achieve these goals, such as stealing credentials, logging keystrokes, hijacking clipboards, capturing screenshots, recording audio and video, and exfiltrating data through a DNS tunnel. You will also learn how to encrypt your data with RSA-wrapped-AES and hardcode your public key into your RAT. You will then update your WorkerRAT and C2 framework to use these modules a
 
 ---
 
 #### **Part 5: Deny, Destroy, Alter** 
 
 
-Part 4 introduces readers to tooling specifically designed to cause damage on networks and hosts. RTCB readers will gain a deep understanding of the programmatic elements employed in the development of ransomware, as well as learn how to build network stress-test tooling in C and Python (DoS). Part 4 concludes with automating and installing XMRminer to hijack hosts and turn them into crypter miners for malicious actors.
+Part 5 introduces readers to tools that are specifically designed to cause damage on networks and hosts. You will gain a deep understanding of the programmatic elements that are employed in the development of ransomware, as well as learn how to build network stress-test tools in C and Python (DoS). Part 5 concludes with automating and installing XMRminer to hijack hosts and turn them into crypto miners for malicious actors.
 
-The principal of Part 4 is to introduce the programmatic components of these tools to develop a better understanding. I believe that the only difference between a FDE tool and ransomware was the author's intent when they developed the program.
+The principle of Part 5 is to introduce the programmatic components of these tools to develop a better understanding. The author believes that the only difference between a full disk encryption (FDE) tool and ransomware is the author’s intent when they developed the program.
 
 ___
 
 #### **Part 6: Command & Control / Advanced Exfiltration**
 
 
-Part 5 will focus on expanding and improving the C2 Framework. At this point a well developed exploit kit is in place, and the next step is improving the delivery, control, & exfiltration mechanisms.
+Part 6 will focus on expanding and improving the C2 framework. At this point, a well-developed exploit kit is in place, and the next step is to improve the delivery, control, and exfiltration mechanisms.
 
-The Mothership Connection is the author's solution. Featuring a Flask backend, SQLAlchemy for botnet databasing, DNS servers for data exfiltration and Rogue DNS, a home grown certificate authority, the ability to crypt and package payloads for drive-by-downloads,and many more features. Front-end development will feature JavaScript and Jinja templates to create a Botnet admin console. The ultimate goal of Part 5 is to leave readers with a robust and full featured Command & Control server, and the knowlege to go out and build there own unique C2s.nto a fully fledged Flask server using an NGINX HTTP server running in a Docker container, featuring drive-by-downloads, Rogue DNS, DNS Tunelling, and SQLAlchemy to maintain a SQLite3 botnet database as well as log exfiltrated data from clients. 
+The Mothership Connection is the author’s solution. It features a Flask backend, SQLAlchemy for botnet databasing, DNS servers for data exfiltration and rogue DNS, a homegrown certificate authority, the ability to encrypt and package payloads for drive-by-downloads, and many more features. Front-end development will feature JavaScript and Jinja templates to create a botnet admin console. The ultimate goal of Part 6 is to leave readers with a robust and full-featured command and control server, and the knowledge to go out and build their own unique C2s.
 
 ---
 
 #### **Part 7:  Using AI to Become Significantly More Dangerous**
 
 
-Part 6 intends to provide RTCB readers with the tools and techniques to incorporate AI into their red-teaming and penetration testing workflow, to significantly boost their productivity and in turn effectiveness. Areas of focus will include strategies for implementing AI into your research process, an introduction to some incredibly useful tools, & an overview of prompt-engineering.
+Part 7 intends to provide readers with the tools and techniques to incorporate AI into their red-teaming and penetration testing workflow, to significantly boost their productivity and effectiveness. Areas of focus will include strategies for implementing AI into your research process, an introduction to some incredibly useful tools, and an overview of prompt-engineering.
 
-Included in this chapter will also be the final module for the C2 Framework, an AI automated MalSpammer, however the code is intentionally broken to prevent misuse. This is a tool intended for Red-Team engagements that include phishing attacks on corporate emails. If it's a tool you'd find a legitimate use for at work, by all means find the bug!
+Included in this chapter will also be the final module for the C2 framework, an AI automated MalSpammer, however the code is intentionally broken to prevent misuse. This is a tool intended for red-team engagements that include phishing attacks on corporate emails. If it’s a tool you’d find a legitimate use for at work, by all means find the bug!
 
 ___
 
