@@ -1,5 +1,5 @@
 # **Red-Team Cookbook**
-![alt text](./imgs/rctb5.jpeg)
+![alt text](https://github.com/0x00wolf/red-team-cookbook/blob/main/imgs/rtcb5.jpeg)
 #### **Learn to emulate the programmatic methods high-level adversaries employ to wage cyber-warfare.**
 
 ---
