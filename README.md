@@ -57,7 +57,8 @@ The WorkerRAT employs three object-oriented design patterns covered in Part 1: W
 
 #### **Part 4: Privilege Escalation, Lateral Movement, & Exfiltration**
 
-In Part 4, you will learn how to escalate privileges, move laterally across the network, and exfiltrate data from your target. You will use various techniques and tools to achieve these goals, such as stealing credentials, logging keystrokes, hijacking clipboards, capturing screenshots, recording audio and video, and exfiltrating data through a DNS tunnel. You will also learn how to encrypt your data with RSA-wrapped-AES and hardcode your public key into your RAT. You will then update your WorkerRAT and C2 framework to use these modules a
+
+Part 4 will teach you how to perform privilege escalation, lateral movement, and data exfiltration on your target network. You will master various techniques and tools for these tasks, such as credential theft, keylogging, clipboard hijacking, screen capture, audio and video recording, and DNS tunneling. You will also learn how to secure your data with RSA-wrapped-AES encryption and embed your public key into your RAT. You will then upgrade your WorkerRAT and C2 framework to use these modules to stealthily extract data and compromise the host.
 
 ---
 
