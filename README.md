@@ -4,7 +4,7 @@
 
 ---
 
-#### A quick note before you continue:
+### A quick note before you continue:
 
 This project is currently in production, however most of the code is already written. I produced this document for a few reasons: As a means of organizing the cookbook, to be able to track progress as I produce deliverables, to cement the programmatic goals I have set out to accomplish, and the resources I need to realize them. 
 
