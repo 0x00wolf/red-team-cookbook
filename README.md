@@ -6,9 +6,7 @@
 
 ### A quick note before you continue:
 
-This project is currently in production, however most of the code is already written. I produced this document for a few reasons: As a means of organizing the cookbook, to be able to track progress as I produce deliverables, to cement the programmatic goals I have set out to accomplish, and the resources I need to realize them. 
-
-Examples are available below representing the style and tone that I intend to take when generating the tutorials.
+This project is currently in production, however most of the code is already written and waiting for me to find it on an encrypted drive somewhere in my house. This project represents my own ongoing efforts to understand how malicious actors do bad things, in the interests of learning how to protect networks and organizations better. The following is an introduction to the project, same code / sections, and the working outline of the chapters & content.
 
 ---
 
@@ -20,7 +18,7 @@ The Red Team Cookbook (RTCB) is a practical guide to programmatically emulate th
 
 The RTCB focuses on using object-oriented Python and procedural C to provide programmatic solutions for the techniques that malicious actors use to develop malware that targets enterprise organizations. Readers will develop the ability to explain, execute, and automate a wide range of techniques used in cyber-warfare.
 
-The RTCB features a number of tutorials, which are all based on Arch Linux. Readers can use individual components for their learning process, or follow along from start to finish and gain a strong understanding of how APTs conduct sophisticated attacks. The RTCB assumes a solid understanding of programming - including object-oriented programming (OOP), as well as comfortable Linux administration. This is not intended to be a collection of scripts for script kiddies, but a method of learning and developing fully undetectable (FUD) tooling for red-team operators and penetration testers.
+The RTCB readers can use individual components from chapters for their learning process, or follow along from start to finish and gain a strong understanding of how APTs conduct sophisticated attacks. The RTCB assumes a solid understanding of programming - including object-oriented programming (OOP), as well as comfortable Linux administration. This is not intended to be a collection of scripts for script kiddies, but a method of learning and developing fully undetectable (FUD) tooling for red-team operators and penetration testers.
 
 The final section of the RTCB is devoted to demonstrating how you can use artificial intelligence (AI) to enhance your red-teaming capabilities.
 
