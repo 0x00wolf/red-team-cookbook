@@ -62,7 +62,7 @@ Introduced in Part 3, and central to the exploit kit, is the OOP WorkerRAT. Movi
 
 ---
 
-### **Part 4: Encrypting & Covert Communications**
+### **Part 4: Encryption & Covert Communications**
 
 
 Part 4 will teach you how to encrypt your communications like an APT. You will learn how to manually secure your data with RSA-wrapped-AES encryption, embedding your public key into your RAT. You will learn to add an additional layer of encryption by homebrewing TLS by becoming your own Certificate Authority. You will develop code for a server side DNS- capable of extracting information from networks stealthily via a DNS Tunnel. You will then upgrade your WorkerRAT and C2 framework to use these modules to stealthily extract data and compromise the host.
