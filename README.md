@@ -68,7 +68,7 @@ Part 4 will teach you how to perform privilege escalation, lateral movement, and
 
 ---
 
-### **Part 5: Deny, Destroy, Alter** 
+### **Part 5: Deny, Destroy, & Alter** 
 
 
 Part 5 introduces readers to tools that are specifically designed to cause damage on networks and hosts. You will gain a deep understanding of the programmatic elements that are employed in the development of ransomware, as well as learn how to build network stress-test tools in C and Python (DoS). Part 5 concludes with automating and installing XMRminer to hijack hosts and turn them into crypto miners for malicious actors.
@@ -77,7 +77,7 @@ The principle of Part 5 is to introduce the programmatic components of these too
 
 ___
 
-### **Part 6: Command & Control / Advanced Exfiltration**
+### **Part 6: The Mothership Connection C2 & Advanced Exfiltration**
 
 
 Part 6 will focus on expanding and improving the C2 framework. At this point, a well-developed exploit kit is in place, and the next step is to improve the delivery, control, and exfiltration mechanisms.
