@@ -41,7 +41,7 @@ In Part 1, readers will also be guided through setting up a virtual lab, with QE
 
 ---
 
-### **Part 2: Reconnaissance - While Network Programming, Do Bad Stuff** 
+### **Part 2: Reconnaissance; While Network Programming, Do Bad Stuff** 
 
 
 Part 2 features a deep dive into different options for network programming using Python, including sockets, SSL, SocketServer, Twisted, Requests, Flask, Scapy, and more. You will manually create servers to receive reverse shells, learn to craft packets layer by layer, and enumerate networks - discovering devices that won’t respond to internet control message protocol (ICMP) requests. You will also learn how to automate encrypting and decrypting data you send across insecure networks with RSA-wrapped-AES and TLS.
@@ -116,7 +116,7 @@ ___
 
 ---
 
-# **Part 1: Preparation & Discovery**
+# **Part 1: Preparation**
 
 ---
 
@@ -248,7 +248,7 @@ ___
 
 ---
 
-# **Part 2: Reconnaissance, aka While Network-Programming, Do Bad Stuff**
+# **Part 2: Reconnaissance**
 
 **MITRE / CKC:** Reconnaissance > Resource Development
 
@@ -277,44 +277,9 @@ Tasting notes:
 
 ---
 
-# **Part 3: Exploitation, Obfuscation & Basic Tooling**
+# Part 3: Arsenal
 
-
-**MITRE / CKC:** Initial Access > Weaponization > Delivery > Exploitation > Installation > Command & Control > Actions on Objectives > Persistence > Privilege Escalation > Execution
-
-
-## **Attack Vector - All warfare is based on deception**
-
-
-**1) Droppers  # C + Python**
-
-**2) Worker-Slave OOP RAT skeleton & Simple Command-Server**  # All code client-side code extends RAT, all server-side code extends C2 server
-
-**3) Download and install a new Slave Module**
-
-**4) Download a File and Execute it**
-
-**5) Automated Vulnerability Scanning & Reporting**
-
-**6) Install Python with C dropper to run .py as modules without compiling**
-
-**7) Use UPNP to open a public facing port on a router**
-
-**8) Windows Persistence**
-- Window's Service 
-- Startup Folder
-- Scripts to Run When Browser is Open (if infected, pass)
-
-**9) Linux Persistence**
-- Systemd service
-- Modifying Bashrc script
-- cronjob
-
----
-
-# Part 3: Building an Arsenal & the Art of Covert Surveillance
-
-**MITRE / CKC:** Credential Access > Discovery > Lateral Movement > Collection 
+**MITRE / CKC:** Initial Access > Weaponization > Delivery > Exploitation > Installation > Command & Control > Actions on Objectives > Persistence > Privilege Escalation > Execution > Credential Access > Discovery > Lateral Movement > Collection 
 
 Tasting notes:
 
@@ -325,14 +290,8 @@ Tasting notes:
 -Sun Tzu
 
 ---
-
-1) Stealer:
-2) Key Loggers: 
-3) Clippers & Crypto Clippers: 
-4) Screen Grabbers: P
-5) Microphone Recording & Streaming: 
-6) Webcam Streaming: 
-
+**1) Droppers**
+     
 **1) Stealer:**
 
 A program that steals sensitive information from the target system, such as tokens, passwords, databases, or files. You will use the sqlite3, re, os, system, shutil, win32crypt, and pywin32 modules to access and extract the information.
@@ -362,11 +321,11 @@ Features:
 
 Programs that record the keystrokes of the user and save them to a file or send them to a C2. You will create eight variations of this PUP, using different methods to capture the keyboard input. Four of them will be in Python, using the pynput, keyboard, pyHook, and ctypes modules. The other four will be in C, using the Windows API, the X11 API, the ncurses library, and the libpcap library.
 
-**3) Clippers & Crypto Clippers**
+**3) Clipper**
 
 A program that monitors the clipboard of the user and replaces any copied text with a predefined text, such as a malicious URL or a cryptocurrency address. You will create two variations of this PUP, using different methods to access and manipulate the clipboard. One of them will be in Python, using the pyperclip module. The other one will be in C, using the GetClipboardData and SetClipboardData functions on Windows, or the XGetSelectionOwner and XSetSelectionOwner functions on Linux.
 
-**4) Screen Grabbers**
+**4) Screen Grabber**
 
 Programs that capture the screen of the user and save it to a file or send it to a C2. You will create one variation of this PUP in Python, using the PIL and io modules to capture and encode the screen image.
 
@@ -380,7 +339,35 @@ A program that streams the webcam of the user to a C2, to spy on the user’s ac
 
 ---
 
-# **Part 5: DoS - Deny, Destroy, & Alter**
+# **Part 4: Remote Access Tool**
+
+
+
+---
+
+**2) Worker-Slave OOP RAT skeleton & Simple Command-Server**  # All code client-side code extends RAT, all server-side code extends C2 server
+
+**3) Download and install a new Slave Module**
+
+**4) Download a File and Execute it**
+
+**5) Automated Vulnerability Scanning & Reporting**
+
+**6) Install Python with C dropper to run .py as modules without compiling**
+
+**7) Use UPNP to open a public facing port on a router**
+
+**8) Windows Persistence**
+- Window's Service 
+- Startup Folder
+- Scripts to Run When Browser is Open (if infected, pass)
+
+**9) Linux Persistence**
+- Systemd service
+- Modifying Bashrc script
+- cronjob
+
+# **Part 5: Deny, Destroy, Alter, & Mine**
 
 ---
 
@@ -415,7 +402,7 @@ Tasting notes:
 
 ---
 
-# Part 4: Encrypting Communications - Using Cryptography as a Weapon
+# Part 4: Encrypting Communications
 
 **MITRE / CKC:** Reconnaissance > Resource Development > Defense Evasion > Collection > Command and Control > Exfiltration
 
@@ -424,16 +411,6 @@ Tasting notes:
 >'536868682E204265207665777920766577792071756965742C2049276D2068756E74696E672077616262697473'
 
 -EF
-
-```
-input_string = '53 68 68 68 2E 20 42 65 20 76 65 77 79 20 76 65 77 79 20 71 75 69 65 74 2C 20 49 27 6D 20 68 75 6E 74 69 6E 67 20 77 61 62 62 69 74 73'
-output_string = ''.join([chr(int(x, 16)) for x in input_string.split()])
-print(output_string)
-```
-
----
-
-Techniques that allows the RAT and the C2 server to communicate securely and covertly:
 
 1) Implement Base64 for binary data transfers: A technique that encodes the binary data into ASCII characters, using the Base64 algorithm, to avoid transmission errors and bypass some filters.
 2) Implement RSA Wrapped AES for communications: A technique that encrypts the communication between the RAT and the C2 server, using a hybrid encryption scheme that combines the RSA and AES algorithms. 
@@ -452,12 +429,9 @@ Techniques that allows the RAT and the C2 server to communicate securely and cov
 **9) DNS Tunneling:** A technique that uses the Domain Name System (DNS) protocol to send and receive data covertly, by encoding the data in the DNS queries and responses. This way, the data can bypass the firewall and other network security measures, as DNS is usually allowed and trusted. You will learn how to use the dnspython module to create and parse the DNS messages, and use the socket module to send and receive them over the network. 
 
 
-# **Part 6: Advanced Command & Control aka The Mothership Connection**
+# **Part 6: Advanced Command & Control**
 
 ---
-
-## **Command Control**
-
 
 **Mitre / CKC:** Actions on Objectives > Collection > C&C > Exploitation
 
