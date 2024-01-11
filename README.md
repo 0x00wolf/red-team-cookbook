@@ -90,6 +90,7 @@ Included in this chapter will also be the final module for the C2 framework, an 
 # Examples Articles:
 
 **Part 3:** [Introducing PUPs](https://github.com/0x00wolf/red-team-cookbook/blob/main/Samples/PUPs/README.md)
+
 **Part 4:** [Homebrewed TLS/SSL & Becoming a Root Certificate Authority](https://github.com/0x00wolf/red-team-cookbook/tree/main/part_1/TLS_root_CA/README.md)
 
 
