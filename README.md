@@ -13,10 +13,11 @@ This project is currently in production, however most of the code is already wri
 # **Introduction**
 
 ---
+If you told a science fiction authors in the 1960s that half a century later humankind will have willingly submitted themselves to constant audio and video surveillance, they probably would have told you that we live in a dystopic & totalitarian future. Globally, it's common practice to have a smart phone attached to our person at all times. These conditions, along with the ongoing growth of the internet has given rise to a new kind of adversary. An adversary whose goals are solely malicious, whose impact can be global, and whose actions are covert. One could be watching you through the camera in your device right now. These adversaries have new kinds of weapons like Botnets, comprised of 10's of millions of devices, which they use to attack the public, industries, utilities, and goverments, often without any accountability for the criminals who perpetrated the crime. 
 
-The Red Team Cookbook (RTCB) is a practical guide to programmatically emulate the methods and techniques that advanced persistent threats (APTs) use at every stage of an attack. From enumeration and initial compromise, to establishing an advanced botnet command infrastructure, the author’s goal is to provide a comprehensive guide for performing techniques used by APTs in a way that readers can understand and emulate them for whatever legitimate application their job may require.
+We live in a new era of cybercrime. Adversaries are perpetrating financial crimes on a scale greater than any other criminals in history. Defenders need to be trained in the same manner as the criminals if they intend on preventing them from doing damage when, not if, they get into their networks.
 
-The RTCB focuses on using object-oriented Python and procedural C to provide programmatic solutions for the techniques that malicious actors use to develop malware that targets enterprise organizations. Readers will develop the ability to explain, execute, and automate a wide range of techniques used in cyber-warfare.
+The Red Team Cookbook (RTCB) is a practical guide to programmatically emulate the methods and techniques that advanced persistent threats (APTs) use at every stage of an attack. From enumeration and initial compromise, to establishing an advanced botnet command infrastructure, you will learn how to use object-oriented Python and procedural C to develop malware that targets enterprise organizations. You will also learn how to explain, execute, and automate a wide range of techniques used in cyber-warfare.
 
 The RTCB readers can use individual components from chapters for their learning process, or follow along from start to finish and gain a strong understanding of how APTs conduct sophisticated attacks. The RTCB assumes a solid understanding of programming - including object-oriented programming (OOP), as well as comfortable Linux administration. This is not intended to be a collection of scripts for script kiddies, but a method of learning and developing fully undetectable (FUD) tooling for red-team operators.
 
@@ -32,15 +33,13 @@ The RTCB is broken into six parts:
 
 ### **Part 1: Preparation**
 
-
-Part one contains tutorials that explain how to use the Python libraries, programmatic techniques, and tools that are required to build a fully functioning exploit kit and command center from scratch with OOP design patterns. Rather than cover any fundamentals (like using iterators & variables), a series of short examples with explanations will cover the Objects and Methods that include more complicated elements (like concurrent programming), so that RTCB readers will have a base reference point to understand the code while working through the recipes. Part 1 will also help RTCB readers readers will also be guided through setting up a virtual lab, with QEMU/KVM and Virt-Manager, to test their exploits and command servers as they progress through the RTCB
+Part 1 contains tutorials that explain how to use Python libraries, programmatic techniques, and tools to build a fully functioning exploit kit and command center from scratch with OOP design patterns. The tutorials cover Objects and Methods that include more complicated elements like concurrent programming. Part 1 also guides readers through setting up a virtual lab with QEMU/KVM and Virt-Manager to test their exploits and command servers as they progress through the RTCB.
 
 ---
 
 ### **Part 2: Reconnaissance** 
 
-
-Part 2 features a deep dive into different options for network programming using Python, including sockets, SSL, SocketServer, Twisted, Requests, Flask, Scapy, and more. You will manually create servers to receive reverse shells, learn to craft packets layer by layer, and enumerate networks - discovering devices that won’t respond to internet control message protocol (ICMP) requests.
+Part 2 features a deep dive into the different options for network programming using Python, including sockets, SSL, SocketServer, Twisted, Requests, Flask, and more. In particular, you will learn how to use Scapy to craft and send various network packets and perform different network attacks, such as ARP scanning, ICMP scanning, port scanning, OS fingerprinting, service discovery, ARP poisoning, and man-in-the-middle (MITM). You will learn how to manipulate the network traffic of your target devices and gain access to their data and resources. Furthermore, how to use socket programming to create network connections between your devices and the C2 server. You will learn how to use threaded sockets, ThreadPoolExecutor, and SocketServer to handle multiple network connections simultaneously and efficiently. You will also learn how to use HTTP callbacks to establish a covert communication channel with your compromised devices.
 
 ---
 
