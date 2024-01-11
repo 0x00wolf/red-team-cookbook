@@ -384,8 +384,9 @@ Tasting notes:
 
 ---
 
->>Oh, I'm gonna hit you so hard, your children will be born bruised!
->>-Tank Girl
+>Oh, I'm gonna hit you so hard, your children will be born bruised!
+
+>-Tank Girl
 
 **MITRE:** Impact
 
