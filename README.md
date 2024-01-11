@@ -244,6 +244,8 @@ ___
 
 **15) IPset scripting**
 
+**16) Homebrewed TLS & Becoming Your Own Root CA**
+
 ---
 
 # **Part 2: Reconnaissance - While Network-Programming, Do Bad Stuff**
@@ -269,6 +271,8 @@ Tasting notes:
 **4) Port Scan Discovered Devices  # TCP Half Open common ports**
 
 **5) ARP Poisoning & MITM**
+
+**6) Python Servers of all kinds**
 
 ---
 
@@ -331,7 +335,7 @@ print(output_string)
 
 **2) Implement RSA Wrapped AES for communications**
 
-**3) Become Your Own Root CA & Implement TLS Connections**
+**3) Implement a Root CA Certificate & Implement TLS Connections**
 
 **4) Update C2 & RAT to use HTTPS Callbacks via SSL**
 
