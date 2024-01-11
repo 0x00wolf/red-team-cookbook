@@ -33,7 +33,7 @@ The RTCB is broken into six parts:
 
 ### **Part 1: Preparation**
 
-Part 1 contains tutorials that explain how to use Python libraries, programmatic techniques, and tools to build a fully functioning exploit kit and command center from scratch with OOP design patterns. The tutorials cover Objects and Methods that include more complicated elements like concurrent programming. Part 1 also guides readers through setting up a virtual lab with QEMU/KVM and Virt-Manager to test their exploits and command servers as they progress through the RTCB.
+Part 1 contains tutorials that explain how to use Python libraries, programmatic techniques, and tools that you will need later to build a fully functioning exploit kit and command center from scratch with OOP design patterns. The tutorials cover Objects and Methods that include more complicated elements like concurrent programming. Part 1 also guides readers through setting up a virtual lab with QEMU/KVM and Virt-Manager to test their exploits and command servers as they progress through the RTCB.
 
 ---
 
