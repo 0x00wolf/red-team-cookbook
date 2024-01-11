@@ -1,12 +1,10 @@
 # **Red-Team Cookbook**
 
----
-
-### **Learn to emulate the programmatic methods high-level adversaries employ to wage cyber-warfare.**
+#### **Learn to emulate the programmatic methods high-level adversaries employ to wage cyber-warfare.**
 
 ---
 
-## **Introduction**
+# **Introduction**
 
 ---
 
@@ -20,13 +18,13 @@ The final section of the RTCB is devoted to demonstrating how you can use artifi
 
 ---
 
-## **Sections Overview:**
+# **Sections Overview:**
 
 The RTCB is broken into six parts: 
 
 ---
 
-#### **Part 1: Preparation & Discovery** 
+### **Part 1: Preparation & Discovery** 
 
 
 Part one contains tutorials that explain how to use the Python libraries, programmatic techniques, and tools that are required to build a fully functioning exploit kit and command center from scratch with OOP design patterns. Some example content includes: learning how to code your own domain name system (DNS) server, which readers will later use to create a rogue DNS and exfiltrate data with a DNS tunnel. You will also learn how to become your own root certificate authority and implement your own public key infrastructure (PKI), which you will use to mask traffic to and from your command and control (C2) server via transport layer security (TLS), hiding your communications among regular HTTPS traffic.
@@ -35,7 +33,7 @@ In Part 1, readers will also be guided through setting up a virtual lab, with QE
 
 ---
 
-#### **Part 2: Reconnaissance - While Network Programming, Do Bad Stuff** 
+### **Part 2: Reconnaissance - While Network Programming, Do Bad Stuff** 
 
 
 Part 2 features a deep dive into different options for network programming using Python, including sockets, SSL, SocketServer, Twisted, Requests, Flask, Scapy, and more. You will manually create servers to receive reverse shells, learn to craft packets layer by layer, and enumerate networks - discovering devices that won’t respond to internet control message protocol (ICMP) requests. You will also learn how to automate encrypting and decrypting data you send across insecure networks with RSA-wrapped-AES and TLS.
@@ -44,7 +42,7 @@ An example from Part 2 is included below: Mini-VPN-Chat, a manual implementation
 
 ---
 
-#### **Part 3: Exploitation, Obfuscation, & Basic Tooling**
+### **Part 3: Exploitation, Obfuscation, & Basic Tooling**
 
 
 In Part 3, you will begin to develop standalone versions of different common potentially unwanted programs (PUPs), as well as start developing the skeleton of your exploit kit. Part 3 will introduce a wide variety of tools for surveillance and data exfiltration - learning how to encrypt and mask traffic.
@@ -55,14 +53,14 @@ The WorkerRAT employs three object-oriented design patterns covered in Part 1: W
 
 ---
 
-#### **Part 4: Privilege Escalation, Lateral Movement, & Exfiltration**
+### **Part 4: Privilege Escalation, Lateral Movement, & Exfiltration**
 
 
 Part 4 will teach you how to perform privilege escalation, lateral movement, and data exfiltration on your target network. You will master various techniques and tools for these tasks, such as credential theft, keylogging, clipboard hijacking, screen capture, audio and video recording, and DNS tunneling. You will also learn how to secure your data with RSA-wrapped-AES encryption and embed your public key into your RAT. You will then upgrade your WorkerRAT and C2 framework to use these modules to stealthily extract data and compromise the host.
 
 ---
 
-#### **Part 5: Deny, Destroy, Alter** 
+### **Part 5: Deny, Destroy, Alter** 
 
 
 Part 5 introduces readers to tools that are specifically designed to cause damage on networks and hosts. You will gain a deep understanding of the programmatic elements that are employed in the development of ransomware, as well as learn how to build network stress-test tools in C and Python (DoS). Part 5 concludes with automating and installing XMRminer to hijack hosts and turn them into crypto miners for malicious actors.
@@ -71,7 +69,7 @@ The principle of Part 5 is to introduce the programmatic components of these too
 
 ___
 
-#### **Part 6: Command & Control / Advanced Exfiltration**
+### **Part 6: Command & Control / Advanced Exfiltration**
 
 
 Part 6 will focus on expanding and improving the C2 framework. At this point, a well-developed exploit kit is in place, and the next step is to improve the delivery, control, and exfiltration mechanisms.
@@ -80,7 +78,7 @@ The Mothership Connection is the author’s solution. It features a Flask backen
 
 ---
 
-#### **Part 7:  Using AI to Become Significantly More Dangerous**
+### **Part 7:  Using AI to Become Significantly More Dangerous**
 
 
 Part 7 intends to provide readers with the tools and techniques to incorporate AI into their red-teaming and penetration testing workflow, to significantly boost their productivity and effectiveness. Areas of focus will include strategies for implementing AI into your research process, an introduction to some incredibly useful tools, and an overview of prompt-engineering.
@@ -89,7 +87,7 @@ Included in this chapter will also be the final module for the C2 framework, an 
 
 ___
 
-#### **Remember:**
+### **Remember:**
 
 
 **1) The world is full of fascinating problems to solve.**
@@ -114,7 +112,7 @@ ___
 
 ---
 
-### **Necessary Python Libraries**
+## **Necessary Python Libraries**
 
 
 **Standard Library:** https://docs.python.org/3/library/index.html
@@ -172,7 +170,7 @@ ___
 ---
 
 
-### **Necessary C Libraries**
+## **Necessary C Libraries**
 
 
 **1) Socket programming**  # https://www.ibm.com/docs/en/zos/2.2.0?topic=interface-sample-c-socket-programs
@@ -187,7 +185,7 @@ ___
 
 ---
 
-### **Additional Knowledge**
+## **Additional Knowledge**
 
 
 **1) OOP Design Patterns:**  # See WorkerRAT v1
@@ -244,7 +242,7 @@ ___
 
 ---
 
-### **Discovery - All Your Base Are Belong To Us:**
+## **Discovery - All Your Base Are Belong To Us:**
 
 
 **1) Scapy**
