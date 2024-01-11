@@ -248,6 +248,8 @@ Tasting notes:
 >All Your Base Are Belong To Us:**
 -Cats
 
+---
+
 **1) Scapy**
 
 **2) Arp Scan  # In case set to not be discoverable by network devices**
@@ -299,16 +301,18 @@ Tasting notes:
 ## **Encrypting Communication** 
 
 **MITRE / CKC:** Defense Evasion -> Command & Control -> Exfiltration
->'536868682E204265207665777920766577792071756965742C2049276D2068756E74696E672077616262697473'
 
 
 Tasting notes:
+>'536868682E204265207665777920766577792071756965742C2049276D2068756E74696E672077616262697473'
+-EF
 ```
 input_string = '53 68 68 68 2E 20 42 65 20 76 65 77 79 20 76 65 77 79 20 71 75 69 65 74 2C 20 49 27 6D 20 68 75 6E 74 69 6E 67 20 77 61 62 62 69 74 73'
 output_string = ''.join([chr(int(x, 16)) for x in input_string.split()])
 print(output_string)
 ```
 
+---
 
 **1) Implement Base64 for binary data transfers**
 
@@ -337,7 +341,9 @@ Tasting notes:
 >The enemy does not want you to know anything about them, just as you will jealously guard your own information and plans.
 
 >If you cannot get the knowledge by fair means, it must be gained by subterfuge, including the employment of spies and double agents.
+-Sun Tzu
 
+---
 
 **1) Stealer:**
    - Browser Passwords & Cookies
@@ -392,6 +398,8 @@ Tasting notes:
 
 -Tank Girl
 
+---
+
 **MITRE:** Impact
 
 
@@ -424,6 +432,7 @@ Tasting notes:
 Tasting notes:
 >**WE ARE THE BORG. YOU WILL BE ASSIMILATED. YOUR UNIQUENESS WILL BE ADDED TO OUR COLLECTIVE. RESISTANCE IS FUTILE.**
 
+---
 
 **1) Routes for OS Specific Malware hosting**
 
