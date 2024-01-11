@@ -85,6 +85,12 @@ Part 6 intends to provide readers with the tools and techniques to incorporate A
 
 Included in this chapter will also be the final module for the C2 framework, an AI automated MalSpammer, however the code is intentionally broken to prevent misuse. This is a tool intended for red-team engagements that include phishing attacks on corporate emails. If it’s a tool you’d find a legitimate use for at work, by all means find the bug!
 
+---
+
+# Examples Articles & Code:
+
+**Part 1:** [Homebrewed TLS/SSL & Becoming a Root Certificate Authority](https://github.com/0x00wolf/red-team-cookbook/tree/main/part_1/TLS_root_CA/README.md)
+
 ___
 
 ### **Remember:**
@@ -101,11 +107,6 @@ ___
 **5) Freedom is good**
 
 ---
-
-# Examples Articles & Code:
-
-**Part 1:** [Homebrewed TLS/SSL & Becoming a Root Certificate Authority](https://github.com/0x00wolf/red-team-cookbook/tree/main/part_1/TLS_root_CA/README.md)
-
 
 # **WORKING OUTLINE:**
 
