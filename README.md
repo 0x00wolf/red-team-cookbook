@@ -290,6 +290,8 @@ Tasting notes:
 -Sun Tzu
 
 ---
+
+## **Potentially Unwanted Programs (PUPs)**
 **1) Droppers**
      
 **1) Stealer:**
@@ -339,35 +341,33 @@ A program that streams the webcam of the user to a C2, to spy on the user’s ac
 
 ---
 
-# **Part 4: Remote Access Tool**
-
-
+## **Remote Access Tool**
 
 ---
 
-**2) Worker-Slave OOP RAT skeleton & Simple Command-Server**  # All code client-side code extends RAT, all server-side code extends C2 server
+**1) Worker-Slave OOP RAT skeleton & Simple Command-Server**  # All code client-side code extends RAT, all server-side code extends C2 server
 
-**3) Download and install a new Slave Module**
+**2) Download and install a new Slave Module**
 
-**4) Download a File and Execute it**
+**3) Download a File and Execute it**
 
-**5) Automated Vulnerability Scanning & Reporting**
+**4) Automated Vulnerability Scanning & Reporting**
 
-**6) Install Python with C dropper to run .py as modules without compiling**
+**5) Install Python with C dropper to run .py as modules without compiling**
 
-**7) Use UPNP to open a public facing port on a router**
+**6) Use UPNP to open a public facing port on a router**
 
-**8) Windows Persistence**
+**7) Windows Persistence**
 - Window's Service 
 - Startup Folder
 - Scripts to Run When Browser is Open (if infected, pass)
 
-**9) Linux Persistence**
+**8) Linux Persistence**
 - Systemd service
 - Modifying Bashrc script
 - cronjob
 
-# **Part 5: Deny, Destroy, Alter, & Mine**
+## **Deny, Destroy, Alter, & Mine**
 
 ---
 
@@ -429,7 +429,7 @@ Tasting notes:
 **9) DNS Tunneling:** A technique that uses the Domain Name System (DNS) protocol to send and receive data covertly, by encoding the data in the DNS queries and responses. This way, the data can bypass the firewall and other network security measures, as DNS is usually allowed and trusted. You will learn how to use the dnspython module to create and parse the DNS messages, and use the socket module to send and receive them over the network. 
 
 
-# **Part 6: Advanced Command & Control**
+# **Part 5: Advanced Command & Control**
 
 ---
 
