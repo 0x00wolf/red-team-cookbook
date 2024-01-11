@@ -242,8 +242,11 @@ ___
 
 ---
 
-## **Discovery - All Your Base Are Belong To Us:**
+## **Discovery 
 
+Tasting notes:
+>All Your Base Are Belong To Us:**
+-Cats
 
 **1) Scapy**
 
@@ -384,9 +387,10 @@ Tasting notes:
 
 ---
 
+Tasting notes:
 >Oh, I'm gonna hit you so hard, your children will be born bruised!
 
->-Tank Girl
+-Tank Girl
 
 **MITRE:** Impact
 
