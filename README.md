@@ -261,26 +261,47 @@ Tasting notes:
 ## **While Network-Programming, Do Bad Stuff**
 
 **1) Scapy** 
+
    - A Python module that allows you to manipulate network packets and perform various network attacks.
+
 **2) Arp Scaning** 
+
    - A technique that uses the Address Resolution Protocol (ARP) to discover the IP and MAC addresses of devices on a local network.
+
 **3) ICMP Scanning** 
+
    - A technique that uses the Internet Control Message Protocol (ICMP) to ping devices on a network and check their availability.
+
 **4) Port Scan** 
+
    - A technique that scans the ports of a target device and identifies the services running on them.
+
 **5) OS Fingerprinting**: 
+
    - A technique that analyzes the network packets of a target device and determines its operating system and version.
+
 **6) Service Discovery**: 
+   
    - A technique that probes the services running on a target device and determines their version and configuration.
+
 **7) ARP Poisoning & MITM**: 
+   
    - A technique that spoofs the ARP cache of devices on a local network and redirects their traffic to an attacker-controlled device, allowing the attacker to intercept and modify the data.
+
 **8) Socket Programming & SSL** 
+
    - A technique that allows you to create and manage network connections and encrypt them using the Secure Sockets Layer (SSL) protocol.
+
 **9) Threaded Sockets, and ThreadPoolExecutor, and SocketServer**:
+
    - A technique that allows you to handle multiple network connections concurrently using threads.
+
 **10) Basic command and control (C2)**:
+
    - A server that allows you to manage and control multiple compromised devices remotely by setting commands.
+
 **13) HTTP callbacks**:
+
    - A technique that allows the compromised devices to communicate with the C2 server using HTTP requests and responses.
 
 ---
