@@ -252,7 +252,7 @@ Tasting notes:
 
 >All Your Base Are Belong To Us:**
 
-   - Cats
+- Cats
 
 ---
 
@@ -285,6 +285,14 @@ Tasting notes:
 
 # Part 3: Arsenal
 
+Tasting note:
+
+>Your rifle is only a tool. It is a hard heart that kills. 
+
+- Gunnery Sergeant Hartman
+
+---
+
 **MITRE / CKC:** Initial Access > Weaponization > Delivery > Exploitation > Installation > Command & Control > Actions on Objectives > Persistence > Privilege Escalation > Execution > Credential Access > Discovery > Lateral Movement > Collection 
 
 Tasting notes:
@@ -293,7 +301,7 @@ Tasting notes:
 
 >If you cannot get the knowledge by fair means, it must be gained by subterfuge, including the employment of spies and double agents.
 
-   - Sun Tzu
+- Sun Tzu
 
 ---
 
@@ -353,7 +361,7 @@ Tasting notes:
 
 >Oh, I'm gonna hit you so hard, your children will be born bruised!
 
- - Tank Girl
+- Tank Girl
 
 ---
 
