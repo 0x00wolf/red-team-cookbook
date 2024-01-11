@@ -6,7 +6,7 @@
 
 ### A quick note before you continue:
 
-This project is currently in production, however most of the code is already written and waiting for me to find it on an encrypted drive somewhere in my house. This project represents my own ongoing efforts to understand how malicious actors do bad things, in the interests of learning how to protect networks and organizations better. The following is an introduction to the project, same code / sections, and the working outline of the chapters & content.
+This project is currently in production, however most of the code is already written and waiting for me to find it on an encrypted drive somewhere in my house. This project represents my own ongoing efforts to understand how malicious actors do bad things, in the interests of learning how to protect networks and organizations better. The following is an introduction to the project, sample code / sections, and the working outline of the chapters & content.
 
 ---
 
