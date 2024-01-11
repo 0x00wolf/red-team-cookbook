@@ -106,7 +106,7 @@ ___
 
 # Examples Articles & Code:
 
-**Part 1:** [Homebrewed TLS/SSL, Becoming a Root Certificate Authority](https://github.com/0x00wolf/red-team-cookbook/tree/main/part_1/TLS_root_CA/README.md)
+**Part 1:** [Homebrewed TLS/SSL & Becoming a Root Certificate Authority](https://github.com/0x00wolf/red-team-cookbook/tree/main/part_1/TLS_root_CA/README.md)
 
 ---
 
