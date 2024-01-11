@@ -20,7 +20,7 @@ The final section of the RTCB is devoted to demonstrating how you can use artifi
 
 ---
 
-## **Format**
+## **Sections Overview:**
 
 The RTCB is broken into six parts: 
 
@@ -101,6 +101,12 @@ ___
 **4) Drugery and boredom are evil**
 
 **5) Freedom is good**
+
+---
+
+# Examples Articles & Code:
+
+[Homebrewed TLS/SSL, Becoming a Root Certificate Authority](https://github.com/0x00wolf/red-team-cookbook/tree/main/part_1/TLS_root_CA/README.md)
 
 ---
 
