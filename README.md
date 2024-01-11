@@ -289,7 +289,7 @@ Tasting note:
 
 >Your rifle is only a tool. It is a hard heart that kills. 
 
-- Gunnery Sergeant Hartman
+-Gunnery Sergeant Hartman
 
 ---
 
@@ -361,7 +361,7 @@ Tasting notes:
 
 >Oh, I'm gonna hit you so hard, your children will be born bruised!
 
-- Tank Girl
+-Tank Girl
 
 ---
 
@@ -425,7 +425,7 @@ Tasting notes:
 
 >**WE ARE THE BORG. YOU WILL BE ASSIMILATED. YOUR UNIQUENESS WILL BE ADDED TO OUR COLLECTIVE. RESISTANCE IS FUTILE.**
 
-   - The Collective
+-The Collective
 
 ---
 
