@@ -32,7 +32,7 @@ The RTCB is broken into six parts:
 
 ---
 
-### **Part 1: Preparation & Discovery** 
+### **Part 1: Proper Prior Preparation Prevents Pi$$-Poor Performance** 
 
 
 Part one contains tutorials that explain how to use the Python libraries, programmatic techniques, and tools that are required to build a fully functioning exploit kit and command center from scratch with OOP design patterns. Some example content includes: learning how to code your own domain name system (DNS) server, which readers will later use to create a rogue DNS and exfiltrate data with a DNS tunnel. You will also learn how to become your own root certificate authority and implement your own public key infrastructure (PKI), which you will use to mask traffic to and from your command and control (C2) server via transport layer security (TLS), hiding your communications among regular HTTPS traffic.
@@ -248,11 +248,9 @@ ___
 
 ---
 
-# **Part 2: Reconnaissance - While Network-Programming, Do Bad Stuff**
+# **Part 2: Reconnaissance, aka While Network-Programming, Do Bad Stuff**
 
----
-
-## **Discovery 
+**MITRE / CKC:** Reconnaissance > Resource Development
 
 Tasting notes:
 
@@ -262,17 +260,20 @@ Tasting notes:
 
 ---
 
-**1) Scapy**
-
-**2) Arp Scan  # In case set to not be discoverable by network devices**
-
-**3) ICMP Scan # If host already discovered do not ping**
-
-**4) Port Scan Discovered Devices  # TCP Half Open common ports**
-
-**5) ARP Poisoning & MITM**
-
-**6) Python Servers of all kinds**
+1) Scapy: A Python module that allows you to manipulate network packets and perform various network attacks.
+2) Arp Scan: A technique that uses the Address Resolution Protocol (ARP) to discover the IP and MAC addresses of devices on a local network.
+3) ICMP Scan: A technique that uses the Internet Control Message Protocol (ICMP) to ping devices on a network and check their availability.
+4) Port Scan: A technique that scans the ports of a target device and identifies the services running on them.
+5) OS Fingerprinting: A technique that analyzes the network packets of a target device and determines its operating system and version.
+6) Service Discovery: A technique that probes the services running on a target device and determines their version and configuration.
+7) ARP Poisoning & MITM: A technique that spoofs the ARP cache of devices on a local network and redirects their traffic to an attacker-controlled device, allowing the attacker to intercept and modify the data.
+8) Socket Programming & SSL: A technique that allows you to create and manage network connections and encrypt them using the Secure Sockets Layer (SSL) protocol.
+9) Threaded Sockets, and ThreadPoolExecutor, and SocketServer: A technique that allows you to handle multiple network connections concurrently using threads.
+10) Threaded File Hosting class: A class that allows you to host and serve files over the network using threads to many clients asynchronously.
+11) SocketServer File Hosting class: A class that allows you to host and serve files over the network using the SocketServer module.
+12) Basic command and control (C2): A server that allows you to manage and control multiple compromised devices remotely by setting commands.
+13) ET Phone Home: HTTP callbacks: A technique that allows the compromised devices to communicate with the C2 server using HTTP requests and responses.
+14) Reverse Shell(s): A technique that allows you to execute commands on a compromised device remotely, using a shell program that connects back to the C2 server.
 
 ---
 
@@ -295,9 +296,9 @@ Tasting notes:
 
 **5) Automated Vulnerability Scanning & Reporting**
 
-**6) Bonus: Install Python with C dropper to run .py as modules without compiling**
+**6) Install Python with C dropper to run .py as modules without compiling**
 
-**7) Bonus: Use UPNP to open a public facing port on a router**
+**7) Use UPNP to open a public facing port on a router**
 
 **8) Windows Persistence**
 - Window's Service 
@@ -311,58 +312,32 @@ Tasting notes:
 
 ---
 
+# Part 3: Building an Arsenal & the Art of Covert Surveillance
 
-## **Encrypting Communication** 
-
-**MITRE / CKC:** Defense Evasion -> Command & Control -> Exfiltration
-
-
-Tasting notes:
-
->'536868682E204265207665777920766577792071756965742C2049276D2068756E74696E672077616262697473'
-
--EF
-
-```
-input_string = '53 68 68 68 2E 20 42 65 20 76 65 77 79 20 76 65 77 79 20 71 75 69 65 74 2C 20 49 27 6D 20 68 75 6E 74 69 6E 67 20 77 61 62 62 69 74 73'
-output_string = ''.join([chr(int(x, 16)) for x in input_string.split()])
-print(output_string)
-```
-
----
-
-**1) Implement Base64 for binary data transfers**
-
-**2) Implement RSA Wrapped AES for communications**
-
-**3) Implement a Root CA Certificate & Implement TLS Connections**
-
-**4) Update C2 & RAT to use HTTPS Callbacks via SSL**
-
-**5) Modifying Certificate Chains on Windows & Linux**
-
-**6) Hiding Traffic in the Clear - if HTTPS traffic, communicate to mothership**
-
-**7) Explore Options for Encrypting Reverse shells with SSL (ex: ncat or manually with SSL)**
-
----
-
-# **Part 4: Privilege Escalation, Lateral Movement, & Exfiltration**
-
-**MITRE / CKC:** Credential Access > Discovery > Lateral Movement > Collection Reconnaisscance
-
-##  **Spy-craft - Data Exfiltration:**
+**MITRE / CKC:** Credential Access > Discovery > Lateral Movement > Collection 
 
 Tasting notes:
 
 >The enemy does not want you to know anything about them, just as you will jealously guard your own information and plans.
 
 >If you cannot get the knowledge by fair means, it must be gained by subterfuge, including the employment of spies and double agents.
+
 -Sun Tzu
 
 ---
 
+1) Stealer:
+2) Key Loggers: 
+3) Clippers & Crypto Clippers: 
+4) Screen Grabbers: P
+5) Microphone Recording & Streaming: 
+6) Webcam Streaming: 
+
 **1) Stealer:**
+
+A program that steals sensitive information from the target system, such as tokens, passwords, databases, or files. You will use the sqlite3, re, os, system, shutil, win32crypt, and pywin32 modules to access and extract the information.
+
+Features:
    - Browser Passwords & Cookies
    - Windows & Linux Password Files
    - os.path.expanduser() regex easter-egg hunt:
@@ -384,25 +359,24 @@ Tasting notes:
      - ETC # definitely forgetting things
 
 **2) Key Loggers**
-   - Python: PynPut
-   - C Variations: 
-     - set Windows Hook
-     - async key state loop
+
+Programs that record the keystrokes of the user and save them to a file or send them to a C2. You will create eight variations of this PUP, using different methods to capture the keyboard input. Four of them will be in Python, using the pynput, keyboard, pyHook, and ctypes modules. The other four will be in C, using the Windows API, the X11 API, the ncurses library, and the libpcap library.
 
 **3) Clippers & Crypto Clippers**
 
+A program that monitors the clipboard of the user and replaces any copied text with a predefined text, such as a malicious URL or a cryptocurrency address. You will create two variations of this PUP, using different methods to access and manipulate the clipboard. One of them will be in Python, using the pyperclip module. The other one will be in C, using the GetClipboardData and SetClipboardData functions on Windows, or the XGetSelectionOwner and XSetSelectionOwner functions on Linux.
+
 **4) Screen Grabbers**
+
+Programs that capture the screen of the user and save it to a file or send it to a C2. You will create one variation of this PUP in Python, using the PIL and io modules to capture and encode the screen image.
 
 **5) Microphone Recording & Streaming**
 
+Programs that record or stream the microphone of the user to a C2, to spy on the user’s activities and surroundings. You will create one variation of this PUP in Python, using the pyaudio and socket modules to access and stream the microphone data.
+
 **6) Webcam Streaming**
 
-**7) RSA-Wrapped-AES**
-   - Hardcode Attacker Public Key into RAT
-
-**8) Update WorkerRAT to encrypt all data with RSA wrapped AES before relaying to mothership**
-
-**9) DNS Tunnelling (DNS Headers module for WorkerRAT phoning home)**
+A program that streams the webcam of the user to a C2, to spy on the user’s activities and surroundings. You will create one variation of this PUP in Python, using the cv2, pyaudio, and socket modules to access and stream the webcam data.
 
 ---
 
@@ -422,7 +396,8 @@ Tasting notes:
 
 
 **1) DoS Modules**
-
+   - SYN Flood: A program that sends a large number of TCP SYN packets to a target server, without completing the three-way handshake, to exhaust its resources and prevent legitimate connections. You will create one variation of this PUP, using the socket module in Python, or the raw socket API in C, to craft and send the packets.
+   - HTTP Flood: A program that sends a large number of HTTP requests to a target web server, to overload its processing capacity and bandwidth. You will create one variation of this PUP, using the requests module in Python, or the libcurl library in C, to generate and send the requests.
 
 **2) Ransomware Module**  # Pathbyter v2.0 Update
 
@@ -434,9 +409,48 @@ Tasting notes:
 
 
 **3) XMRrig:**  
-- Scripted Installation and Configuration (maybe monitor and stop when task manager is open to hide usage)
+
+   - Scripted Installation and Configuration: A technique that downloads and installs the XMRig software, which is a high-performance Monero (XMR) miner, and configures it to mine for the attacker’s wallet address. You will learn how to use the requests or urllib modules in Python, or the libcurl or WinINet libraries in C, to download the XMRig binary or source code, and the subprocess or os modules in Python, or the system or CreateProcess functions in C, to execute it. You will also learn how to use the json module in Python, or the json-c library in C, to modify the XMRig configuration file with the attacker’s parameters.
+   - Monitor and Stop When Task Manager is Open (to hide usage): A technique that monitors the system for the presence of the Task Manager process, and stops the XMRig process if it is detected, to hide the CPU and memory usage. You will learn how to use the psutil module in Python, or the psapi or proc libraries in C, to enumerate and terminate the processes.
 
 ---
+
+# Part 4: Encrypting Communications - Using Cryptography as a Weapon
+
+**MITRE / CKC:** Reconnaissance > Resource Development > Defense Evasion > Collection > Command and Control > Exfiltration
+
+Tasting notes:
+
+>'536868682E204265207665777920766577792071756965742C2049276D2068756E74696E672077616262697473'
+
+-EF
+
+```
+input_string = '53 68 68 68 2E 20 42 65 20 76 65 77 79 20 76 65 77 79 20 71 75 69 65 74 2C 20 49 27 6D 20 68 75 6E 74 69 6E 67 20 77 61 62 62 69 74 73'
+output_string = ''.join([chr(int(x, 16)) for x in input_string.split()])
+print(output_string)
+```
+
+---
+
+Techniques that allows the RAT and the C2 server to communicate securely and covertly:
+
+1) Implement Base64 for binary data transfers: A technique that encodes the binary data into ASCII characters, using the Base64 algorithm, to avoid transmission errors and bypass some filters.
+2) Implement RSA Wrapped AES for communications: A technique that encrypts the communication between the RAT and the C2 server, using a hybrid encryption scheme that combines the RSA and AES algorithms. 
+3) Become Your Own Root CA & Implement TLS Connections: A technique that allows you to create your own root certificate authority (CA) and issue certificates for the RAT and the C2 server, to establish secure TLS connections between compromised devices and your C2. 
+4) Public Key Encryption: A technique that encrypts the communication between the PUP and the C2, using a pair of keys: a public key and a private key. The public key is known to both parties, and can be used to encrypt the data. The private key is known only to the receiver, and can be used to decrypt the data. This way, only the intended receiver can read the data, even if it is intercepted by a third party. You will learn how to hardcode the attacker’s public key into the WorkerRAT, and use the cryptography module to encrypt the data before sending it to the C2. You will also learn how to use the ssl module to encrypt the data again at the transport layer, using the Secure Sockets Layer (SSL) protocol. 
+5) Mini-VPN-Chat, manually implement TLS on top of RSA-Wrapped-AES payloads creating a chat client, in preparation for the upcoming Command & Control chapter.
+
+**5) Update C2 & RAT to use HTTPS Callbacks via SSL**
+
+**6) Modifying Certificate Chains on Windows & Linux**
+
+**7) Hiding Traffic in the Clear - if HTTPS traffic, communicate to mothership**
+
+**8) Exploring Options for Encrypting Reverse shells with SSL (ex: ncat or manually with SSL)**
+
+**9) DNS Tunneling:** A technique that uses the Domain Name System (DNS) protocol to send and receive data covertly, by encoding the data in the DNS queries and responses. This way, the data can bypass the firewall and other network security measures, as DNS is usually allowed and trusted. You will learn how to use the dnspython module to create and parse the DNS messages, and use the socket module to send and receive them over the network. 
+
 
 # **Part 6: Advanced Command & Control aka The Mothership Connection**
 
