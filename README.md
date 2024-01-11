@@ -318,14 +318,6 @@ Tasting note:
 
 **MITRE / CKC:** Initial Access > Weaponization > Delivery > Exploitation > Installation > Command & Control > Actions on Objectives > Persistence > Privilege Escalation > Execution > Credential Access > Discovery > Lateral Movement > Collection 
 
-Tasting notes:
-
->The enemy does not want you to know anything about them, just as you will jealously guard your own information and plans.
-
->If you cannot get the knowledge by fair means, it must be gained by subterfuge, including the employment of spies and double agents.
-
-- Sun Tzu
-
 ---
 
 ## **Potentially Unwanted Programs (PUPs)**
@@ -357,6 +349,14 @@ everse Shells
 ---
 
 ## **Remote Access Tool**
+
+Tasting notes:
+
+>The enemy does not want you to know anything about them, just as you will jealously guard your own information and plans.
+
+>If you cannot get the knowledge by fair means, it must be gained by subterfuge, including the employment of spies and double agents.
+
+- Sun Tzu
 
 **1) Worker-Slave OOP RAT Skeleton**
 
