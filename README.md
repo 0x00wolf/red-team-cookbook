@@ -2,7 +2,9 @@
 
 #### **Learn to emulate the programmatic methods high-level adversaries employ to wage cyber-warfare.**
 
-**A quick note before you continue:**
+---
+
+#### A quick note before you continue:
 This project is currently in production, however most of the code is already written. I produced this document as a means of organizing the cookbook, marking the production of deliverables, to cement the goals I have set out for this project, and the resources I will use to accomplish them. 
 
 Examples are available below representing the style and tone that I intend to take when generating the tutorials.
