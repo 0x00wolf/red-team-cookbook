@@ -18,7 +18,7 @@ The Red Team Cookbook (RTCB) is a practical guide to programmatically emulate th
 
 The RTCB focuses on using object-oriented Python and procedural C to provide programmatic solutions for the techniques that malicious actors use to develop malware that targets enterprise organizations. Readers will develop the ability to explain, execute, and automate a wide range of techniques used in cyber-warfare.
 
-The RTCB readers can use individual components from chapters for their learning process, or follow along from start to finish and gain a strong understanding of how APTs conduct sophisticated attacks. The RTCB assumes a solid understanding of programming - including object-oriented programming (OOP), as well as comfortable Linux administration. This is not intended to be a collection of scripts for script kiddies, but a method of learning and developing fully undetectable (FUD) tooling for red-team operators and penetration testers.
+The RTCB readers can use individual components from chapters for their learning process, or follow along from start to finish and gain a strong understanding of how APTs conduct sophisticated attacks. The RTCB assumes a solid understanding of programming - including object-oriented programming (OOP), as well as comfortable Linux administration. This is not intended to be a collection of scripts for script kiddies, but a method of learning and developing fully undetectable (FUD) tooling for red-team operators.
 
 The final section of the RTCB is devoted to demonstrating how you can use artificial intelligence (AI) to enhance your red-teaming capabilities.
 
