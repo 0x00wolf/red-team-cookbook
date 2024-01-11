@@ -5,7 +5,8 @@
 ---
 
 #### A quick note before you continue:
-This project is currently in production, however most of the code is already written. I produced this document as a means of organizing the cookbook, marking the production of deliverables, to cement the goals I have set out for this project, and the resources I will use to accomplish them. 
+
+This project is currently in production, however most of the code is already written. I produced this document for a few reasons: As a means of organizing the cookbook, to be able to track progress as I produce deliverables, to cement the programmatic goals I have set out to accomplish, and the resources I need to realize them. 
 
 Examples are available below representing the style and tone that I intend to take when generating the tutorials.
 
