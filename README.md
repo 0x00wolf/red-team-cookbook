@@ -384,7 +384,8 @@ Tasting notes:
 
 ---
 
-## **Blowing Stuff Up & Mining Crypto For Fun and Profit** 
+>>Oh, I'm gonna hit you so hard, your children will be born bruised!
+>>-Tank Girl
 
 **MITRE:** Impact
 
