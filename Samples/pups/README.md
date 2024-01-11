@@ -8,30 +8,31 @@ As you progress through the RTCB you will incorporate your own selection of PUPs
 
 **1) Keyloggers:** 
     
-    - A program that records the keystrokes of the user and saves them to a file or sends them to a C2. You will create eight variations of this PUP, using different methods to capture the keyboard input. Four of them will be in Python, using the pynput, keyboard, pyHook, and ctypes modules. The other four will be in C, using the Windows API, the X11 API, the ncurses library, and the libpcap library.
+- A program that records the keystrokes of the user and saves them to a file or sends them to a C2. You will create eight variations of this PUP, using different methods to capture the keyboard input. Four of them will be in Python, using the pynput, keyboard, pyHook, and ctypes modules. The other four will be in C, using the Windows API, the X11 API, the ncurses library, and the libpcap library.
+
 **2) Droppers:** 
     
-    - A program that downloads and executes another program from a remote source, such as a URL or a C2. You will create four variations of this PUP, using different methods to download and execute the payload. Two of them will be in Python, using the requests, urllib, subprocess, and os modules. The other two will be in C, using the libcurl library, the WinINet API, the system function, and the CreateProcess function.
+- A program that downloads and executes another program from a remote source, such as a URL or a C2. You will create four variations of this PUP, using different methods to download and execute the payload. Two of them will be in Python, using the requests, urllib, subprocess, and os modules. The other two will be in C, using the libcurl library, the WinINet API, the system function, and the CreateProcess function.
 
 **3) A Stealer:** 
     
-    - A program that steals sensitive information from the target system, such as tokens, passwords, databases, or files. You will create one variation of this PUP in Python, using the sqlite3, shutil, win32crypt, and pywin32 modules to access and extract the information.
+- A program that steals sensitive information from the target system, such as tokens, passwords, databases, or files. You will create one variation of this PUP in Python, using the sqlite3, shutil, win32crypt, and pywin32 modules to access and extract the information.
 
 **4) Tools for Network and System Fingerprinting:** 
     
-    - A program that collects information about the target system, such as the operating system, hardware, network, processes, or users. You will create one variation of this PUP in Python, using the os, platform, psutil, socket, requests, and getpass modules to gather and report the information.
+- A program that collects information about the target system, such as the operating system, hardware, network, processes, or users. You will create one variation of this PUP in Python, using the os, platform, psutil, socket, requests, and getpass modules to gather and report the information.
 
 **5) A Clipper / Crypto-jacker:** 
     
-    - A family of programs that monitors the clipboard of the user and replaces any copied text with a predefined text, such as a malicious URL or a cryptocurrency address. You will create two variations of this PUP, using different methods to access and manipulate the clipboard. One of them will be in Python, using the pyperclip module. The other one will be in C, using the GetClipboardData and SetClipboardData functions on Windows, or the XGetSelectionOwner and XSetSelectionOwner functions on Linux.
+- A family of programs that monitors the clipboard of the user and replaces any copied text with a predefined text, such as a malicious URL or a cryptocurrency address. You will create two variations of this PUP, using different methods to access and manipulate the clipboard. One of them will be in Python, using the pyperclip module. The other one will be in C, using the GetClipboardData and SetClipboardData functions on Windows, or the XGetSelectionOwner and XSetSelectionOwner functions on Linux.
 
 **6) A Screen Grabber:** 
     
-    - A program that captures the screen of the user and saves it to a file or sends it to a C2. You will create one variation of this PUP in Python, using the PIL and io modules to capture and encode the screen image.
+- A program that captures the screen of the user and saves it to a file or sends it to a C2. You will create one variation of this PUP in Python, using the PIL and io modules to capture and encode the screen image.
 
 **7) Webcam and Microphone Streaming Tools:** 
 
-    - A program that streams the webcam and microphone of the user to a C2, to spy on the user’s activities and surroundings. You will create one variation of this PUP in Python, using the cv2, pyaudio, and socket modules to access and stream the webcam and microphone data. 
+- A program that streams the webcam and microphone of the user to a C2, to spy on the user’s activities and surroundings. You will create one variation of this PUP in Python, using the cv2, pyaudio, and socket modules to access and stream the webcam and microphone data. 
 
 By the end of this section, you will have a solid foundation in systems programming for potentially unwanted reasons, and a powerful arsenal of PUPs and C2s that you can use for your red-team exercises. You will also learn how to test, debug, and deploy your PUPs and C2s, using the virtual lab you set up in Part 1. Remember, the goal of this book is to teach you how to develop a robust toolset for legitimate and ethical red-teaming, to emulate real-world threat actors and improve the security of your systems and networks. Do not use these PUPs and C2s for any illegal or malicious purposes, as you may face serious legal consequences. Always obtain the proper authorization and consent before conducting any red-team exercise, and follow the ethical hacking principles and guidelines. Happy hacking!
 
