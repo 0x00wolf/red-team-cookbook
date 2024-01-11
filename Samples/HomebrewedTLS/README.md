@@ -1,4 +1,4 @@
-# **Home Brewed TLS & Becoming Your Own Root CA**
+# **Home Brewed TLS & Becoming a Root CA**
 
 To create a secure communication channel between a server and a client, you can use the ssl module in Python. The ssl module provides a wrapper for the socket module, which allows you to use SSL/TLS encryption for your network connections. SSL/TLS is a protocol that ensures the confidentiality, integrity, and authentication of the data exchanged between two parties.
 
