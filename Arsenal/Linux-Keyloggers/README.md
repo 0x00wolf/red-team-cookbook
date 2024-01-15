@@ -118,11 +118,15 @@ listener.start()
 
 The queue and threading is to ensure that the pynput module doesn't block the main thread while listening to the keyboard events. You can learn more about the pynput module from https://pynput.readthedocs.io/.
 
+---
+
 # **Key Loggers: Linux - Interpreting /dev/input/ events**
 
 Linux expands the concept of a file to every component of your computer. Each device attached to your computer will have a corresponding file that represents a binary stream of input data, which lives in the `/dev/input/` directory. To listen to keystrokes globally on a Linux box, we need the account we are using to have reading rights to the input events, which generally will be limited to root access. 
 
 Almost all Linux boxes will have an installation of Python. Therefore, if you have been able to escalate privileges, but don’t have an installation of Pip, or are concerned that a download might trigger additional scrutiny, the ability to whip up a keylogger in vanilla Python could be advantageous. You could accomplish the same thing in a lower level language, but chances are Python will be there, and it’s significantly more complex to implement parsing of the event structs in C.
+
+---
 
 ## **Exploring /dev/input**
 
@@ -145,6 +149,8 @@ cat /proc/bus/input/devices | grep keyboard -A 8
 ```
 
 **Look for the number associated with the event from the information that is returned.**
+
+---
 
 ## **You can determine which event is associated with the keyboard programmatically with:**
 
@@ -192,6 +198,8 @@ if __name__ == '__main__':
 
 **Look for the number associated with the event from the information that is returned.**
 
+---
+
 ## **View the Binary Data Stream**
 
 **Having identified your event code we can use cat to examine the binary data from the keyboards input:**
@@ -201,6 +209,8 @@ sudo cat /dev/input/eventX
 ```
 
 **Type something and watch the binary data stream appear...**
+
+---
 
 ## **Interpreting the binary event stream:**
 
@@ -217,6 +227,8 @@ struct input_event {
 };
 ```
 The first 16 bits contain the system time, and the next 8 bits contain the event code and the value. The value can be 1 for pressed, 2 for held, or 0 for released.
+
+---
 
 ## **Viewing Input Event Codes & Values in Python**
 
@@ -238,6 +250,8 @@ except KeyboardInterrupt:
     print("goodbye")
     print("goodbye")
 ```
+
+---
 
 ## **Viewing Input Event Codes and Values in C**
 
@@ -273,6 +287,8 @@ int main()
 }
 ```
 
+---
+
 ## Parsing Linux Event Codes Into Keys
 
 **You can use `cat` to view Linux's extensive set of keycodes using:**
@@ -284,6 +300,8 @@ cat /usr/include/linux/input-event-codes.h
 **or at Linus Torvald's Linux Kernel repo:** https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/include/uapi/linux/input-event-codes.h
 
 There are a huge number of event codes. The Linux Kernel handles interpreting keyboard events, including logic for when Shift is held, or caps lock is on, or when both are held. As Python is installed by default on Linux installations, we'll work out the logic for parsing keystrokes in Python. 
+
+---
 
 ## Mapping Out the Keycodes
 
@@ -310,6 +328,8 @@ keymap.close()
 
 For my solution, I used two lists to match keycodes to keys, and then depending on the state, my program will select the appropriate list. The above script wil generate a Python file with capital letters. Admittedly I did some manual conversion for special symbols in the second list.
 
+---
+
 # **Key Loggers: Vanilla Python Keylogger**
 
 This keylogger will run out of the box on any Python 3 installation (root privileges are most likely required). It uses three threads and two queues. 
@@ -319,6 +339,8 @@ This keylogger will run out of the box on any Python 3 installation (root privil
 2) The Consumer thread grabs an event from the first queue, parses the event into a keystroke, and places the keystroke into the second queue. This was the tricky part, handling state & user input.
 
 3) The Recorder thread grabs a keystroke from the second queue, and then writes it to a file. It also handles backspaces, opening the file and rewriting it with the last key sliced off.
+
+---
 
 ## **The Code Works as Follows:**
 
