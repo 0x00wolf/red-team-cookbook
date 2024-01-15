@@ -130,25 +130,25 @@ Almost all Linux boxes will have an installation of Python. Therefore, if you ha
 
 ## **Exploring /dev/input**
 
-**To view the different event streams running in your computer:**
+To view the different event streams running in your computer:
 
 ```bash
 ls -l /dev/input/ 
 ```
 
-**To discover which event is mapped to the keyboard you can use the following command:**
+To discover which event is mapped to the keyboard you can use the following command:
 
 ```bash
 cat /proc/bus/input/devices
 ```
 
-**Which returns a list of all the devices currently mapped to your computer and their associated event codes. To save some time:**
+Which returns a list of all the devices currently mapped to your computer and their associated event codes. To save some time:
  
 ```bash
 cat /proc/bus/input/devices | grep keyboard -A 8
 ```
 
-**Look for the number associated with the event from the information that is returned.**
+Look for the number associated with the event from the information that is returned.
 
 ---
 
@@ -202,19 +202,19 @@ if __name__ == '__main__':
 
 ## **View the Binary Data Stream**
 
-**Having identified your event code we can use cat to examine the binary data from the keyboards input:**
+Having identified your event code we can use cat to examine the binary data from the keyboards input:
 
 ```bash
 sudo cat /dev/input/eventX
 ```
 
-**Type something and watch the binary data stream appear...**
+Type something and watch the binary data stream appear...
 
 ---
 
 ## **Interpreting the binary event stream:**
 
-**The structure of the binary data is found in the Linux docs:** https://www.kernel.org/doc/Documentation/input/input.txt
+The structure of the binary data is found in the Linux docs: https://www.kernel.org/doc/Documentation/input/input.txt
 
 The keycodes for the keys being pressed can be extracted via a struct object, which is comprised as follows:
 
@@ -291,13 +291,13 @@ int main()
 
 ## Parsing Linux Event Codes Into Keys
 
-**You can use `cat` to view Linux's extensive set of keycodes using:**
+You can use `cat` to view Linux's extensive set of keycodes using:
 
 ```bash
 cat /usr/include/linux/input-event-codes.h
 ```
 
-**or at Linus Torvald's Linux Kernel repo:** https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/include/uapi/linux/input-event-codes.h
+or at Linus Torvald's Linux Kernel repo: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/include/uapi/linux/input-event-codes.h
 
 There are a huge number of event codes. The Linux Kernel handles interpreting keyboard events, including logic for when Shift is held, or caps lock is on, or when both are held. As Python is installed by default on Linux installations, we'll work out the logic for parsing keystrokes in Python. 
 
