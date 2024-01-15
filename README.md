@@ -78,15 +78,6 @@ Blog posts in this section will focus on a larger C2 project, using a Flask back
 
 I use AI everyday in my workflow. I consider GPT my proof reader, super Google, and coding co-pilot. I intend of developing posts regarding the tools and techniques so that they can incorporate AI into their red-teaming and penetration testing workflow, to significantly boost their productivity and effectiveness. Areas of focus will include strategies for implementing AI into your research process, how to obtain the best results, an introduction to some  useful tools, and an overview of prompt-engineering.
 
----
-
-# Examples Articles:
-
-**Part 3:** [Introducing PUPs](https://github.com/0x00wolf/red-team-cookbook/blob/main/Samples/PUPs/README.md)
-
-**Part 4:** [Homebrewed TLS/SSL & Becoming a Root Certificate Authority](https://github.com/0x00wolf/red-team-cookbook/tree/main/part_1/TLS_root_CA/README.md)
-
-
 ___
 
 ### **Remember:**
