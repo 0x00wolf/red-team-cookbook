@@ -274,7 +274,6 @@ int main()
                 }
         }
 }
-}
 ```
 
 ## Parsing Linux Event Codes Into Keys
