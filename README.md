@@ -6,7 +6,7 @@
 
 ### A quick note before you continue:
 
-The RTCB blog & associated repository represent my own ongoing efforts to understand how malicious actors do bad things, in the interests of learning how to protect networks and organizations better. The following is an introduction to the project, sample code / sections, and the working outline for the material I plan on covering.
+The Red Team Cookbook blog (RTCBb) & associated repository represent my own ongoing efforts to understand how malicious actors do bad things, in the interests of learning how to protect networks and organizations better. The following is an introduction to the project, sample code / sections, and the working outline for the material I plan on covering.
 
 ---
 
@@ -17,13 +17,13 @@ If you told a science fiction authors in the 1960s that half a century later hum
 
 We live in a new era of cybercrime. Adversaries are perpetrating financial crimes on a scale greater than any other criminals in history. Defenders need to be trained in the same manner as the criminals if they intend on preventing them from doing damage when, not if, they get into their networks.
 
-The Red Team Cookbook (RTCB) blog is my attempt to create practical tutorials to programmatically emulate the methods and techniques that advanced persistent threats (APTs) use at every stage of an attack. From enumeration and initial compromise, to establishing an advanced botnet command infrastructure, we will explore how to use object-oriented Python and procedural C to develop malware that targets enterprise organizations. 
+The RTCBb is my attempt to create practical tutorials to programmatically emulate the methods and techniques that advanced persistent threats (APTs) use at every stage of an attack. From enumeration and initial compromise, to establishing an advanced botnet command infrastructure, we will explore how to use object-oriented Python and procedural C to develop malware that targets enterprise organizations. 
 
 ---
 
 # **Areas of Focus:**
 
-RTCB blog posts will focus on 6 areas of focus: 
+RTCBb posts will focus on 6 areas of focus: 
 
 ---
 
