@@ -6,7 +6,7 @@
 
 ### A quick note before you continue:
 
-The Red Team Cookbook blog (RTCBb) & associated repository represent my own ongoing efforts to understand how malicious actors do bad things, in the interests of learning how to protect networks and organizations better. The following is an introduction to the project, on overview of the areas of focus, and the working outline for the material I plan on covering.
+The Red Team Cookbook blog (RTCBb) & associated repository represent my own ongoing efforts to understand how malicious actors do bad things, in the interests of learning how to protect networks and organizations better. The README.md is features an introduction, an overview of the sections, & an index of topics and resources.
 
 ---
 
@@ -228,6 +228,8 @@ ___
 **15) IPset scripting**
 
 **16) Homebrewed TLS & Becoming Your Own Root CA**
+
+**17) **Payloads All Things:** https://github.com/swisskyrepo/PayloadsAllTheThings
 
 ---
 
