@@ -1,12 +1,12 @@
 # **Red-Team Cookbook**
 ![alt text](https://github.com/0x00wolf/red-team-cookbook/blob/main/imgs/github.jpeg)
-#### **Learn to emulate the programmatic methods high-level adversaries employ to wage cyber-warfare.**
+#### **Learning to emulate the programmatic methods high-level adversaries employ to wage cyber-warfare.**
 
 ---
 
 ### A quick note before you continue:
 
-This project is currently in production, however most of the code is already written and waiting for me to find it on an encrypted drive somewhere in my house. This project represents my own ongoing efforts to understand how malicious actors do bad things, in the interests of learning how to protect networks and organizations better. The following is an introduction to the project, sample code / sections, and the working outline of the chapters & content.
+The RTCB blog & associated repository represent my own ongoing efforts to understand how malicious actors do bad things, in the interests of learning how to protect networks and organizations better. The following is an introduction to the project, sample code / sections, and the working outline for the material I plan on covering.
 
 ---
 
@@ -17,72 +17,62 @@ If you told a science fiction authors in the 1960s that half a century later hum
 
 We live in a new era of cybercrime. Adversaries are perpetrating financial crimes on a scale greater than any other criminals in history. Defenders need to be trained in the same manner as the criminals if they intend on preventing them from doing damage when, not if, they get into their networks.
 
-The Red Team Cookbook (RTCB) is a practical guide to programmatically emulate the methods and techniques that advanced persistent threats (APTs) use at every stage of an attack. From enumeration and initial compromise, to establishing an advanced botnet command infrastructure, you will learn how to use object-oriented Python and procedural C to develop malware that targets enterprise organizations. You will also learn how to explain, execute, and automate a wide range of techniques used in cyber-warfare.
-
-The RTCB readers can use individual components from chapters for their learning process, or follow along from start to finish and gain a strong understanding of how APTs conduct sophisticated attacks. The RTCB assumes a solid understanding of programming - including object-oriented programming (OOP), as well as comfortable Linux administration. This is not intended to be a collection of scripts for script kiddies, but a method of learning and developing fully undetectable (FUD) tooling for red-team operators.
-
-The final section of the RTCB is devoted to demonstrating how you can use artificial intelligence (AI) to enhance your red-teaming capabilities.
+The Red Team Cookbook (RTCB) blog is my attempt to create practical tutorials to programmatically emulate the methods and techniques that advanced persistent threats (APTs) use at every stage of an attack. From enumeration and initial compromise, to establishing an advanced botnet command infrastructure, we will explore how to use object-oriented Python and procedural C to develop malware that targets enterprise organizations. 
 
 ---
 
-# **Sections Overview:**
+# **Areas of Focus:**
 
-The RTCB is broken into six parts: 
-
----
-
-### **Part 1: Preparation**
-
-Part 1 contains tutorials that explain how to use Python libraries, programmatic techniques, and tools that you will need later to build a fully functioning exploit kit and command center from scratch with OOP design patterns. The tutorials cover Objects and Methods that include more complicated elements like concurrent programming. Part 1 also guides readers through setting up a virtual lab with QEMU/KVM and Virt-Manager to test their exploits and command servers as they progress through the RTCB.
+RTCB blog posts will focus on 6 areas of focus: 
 
 ---
 
-### **Part 2: Reconnaissance** 
+### **1) Preparation**
 
-Part 2 features a deep dive into the different options for network programming using Python, including sockets, SSL, SocketServer, Twisted, Requests, Flask, and more. In particular, you will learn how to use Scapy to craft and send various network packets and perform different network attacks, such as ARP scanning, ICMP scanning, port scanning, OS fingerprinting, service discovery, ARP poisoning, and man-in-the-middle (MITM). You will learn how to manipulate the network traffic of your target devices and gain access to their data and resources. Furthermore, how to use socket programming to create network connections between your devices and the C2 server. You will learn how to use threaded sockets, ThreadPoolExecutor, and SocketServer to handle multiple network connections simultaneously and efficiently. You will also learn how to use HTTP callbacks to establish a covert communication channel with your compromised devices.
-
----
-
-## **Part 3: Arsenal**
-
-### 3a: Potentiall Unwanted Programs (PUPs)
-
-Part 3 is dedicated to building an arsenal of red-teaming tools. PUPs will be featured in C and Python, and will represent a variety of methods for accomplishing the programmatic function of each on both Windows & Linux.
-
-### 3b: Destroy, Alter, Deny, & Mine
-
-Part 3b introduces readers to tools that are specifically designed to cause damage on networks and hosts. The author believes that the only difference between a full disk encryption (FDE) tool and ransomware is its creator's intent when they developed the program. Don't do bad things. 
-
-You will gain a deep understanding of the programmatic elements that are employed in the development of ransomware, as well as learn how to build network stress-test tools in C and Python (DoS). Concluding with automating and installing XMRminer to hijack hosts and turn them into crypto miners for malicious actors. 
-
-### 3c: Remote Access Tool
-
-Introduced in Part 3, and central to the exploit kit, is the OOP WorkerRAT. Moving forward, every component will be constructed as a standalone tool, and then used to extend these basic models. The WorkerRAT employs a few object-oriented design patterns to enable easy extension and customization. 
+Python libraries, programmatic techniques, and tools that I'll use to build a fully functioning exploit kit and command center from scratch with OOP design patterns
 
 ---
 
-### **Part 4: Encryption & Covert Communications**
+### **2) Reconnaissance** 
+
+In this section I will conduct a deep dive into the different options for network programming using Python, including sockets, SSL, SocketServer, Scapy, Twisted, Requests, Flask, and more. I'm going to produce posts on how to use Scapy to craft and send various network packets and perform different network attacks, such as ARP scanning, ICMP scanning, port scanning, OS fingerprinting, service discovery, ARP poisoning, and man-in-the-middle (MITM). Furthermore, how to use socket programming to create network connections between remote devices and a C2 server.
+
+---
+
+## **3) Arsenal**
+
+### 3a) Potentiall Unwanted Programs (PUPs)
+
+The Arsenal is dedicated to building an arsenal of red-teaming tools, or potentially unwanted programs (PUPs). PUPs will be featured in C and Python, and will represent a variety of methods for accomplishing the programmatic function of each on both Windows & Linux.
+
+### 3b) Destroy, Alter, Deny, & Mine
+
+This section focuses on tools that are specifically designed to cause damage on networks and hosts. I believe that the only difference between a full disk encryption (FDE) tool and ransomware is its creator's intent when they developed the program. So generally speaking, don't do bad things. 
+
+### 3c) Remote Access Tool
+
+This section will focus on developing an OOP WorkerRAT. The WorkerRAT employs a few object-oriented design patterns to enable easy extension and customization.
+
+---
+
+### **4) Encryption & Covert Communications**
 
 
-Part 4 will teach you how to encrypt your communications like an APT. You will learn how to manually secure your data with RSA-wrapped-AES encryption, embedding your public key into your RAT. You will learn to add an additional layer of encryption by homebrewing TLS by becoming your own Certificate Authority. You will develop code for a server side DNS- capable of extracting information from networks stealthily via a DNS Tunnel. You will then upgrade your WorkerRAT and C2 framework to use these modules to stealthily extract data and compromise the host.
+This section will focus on encrypting communications like an APT. I will explore manually securing data with RSA-wrapped-AES encryption, embedding a public key into the RAT. And add an additional layer of encryption by homebrewing TLS to become a root Certificate Authority. I'm also going to develop the code for a server side DNS capable of extracting information from networks stealthily via a DNS Tunnel. 
 
 ___
 
-### **Part 5: Advanced Command & Control**
+### **5) Advanced Command & Control**
 
 
-Part 5 will focus on expanding and improving the C2 framework. At this point, a well-developed exploit kit is in place, and the next step is to improve the delivery, control, and exfiltration mechanisms.
-
-This section will show you how to code a Flask backend using an NGINX HTTP server in a Docker Container. You will implement SQLAlchemy ORM for botnet databasing, upgrade your DNS server to be able to act as a Rogue DNS, encrypt & package payloads for drive-by-downloads, and many more features. Front-end development will feature JavaScript and Jinja templates to create a botnet admin console. The ultimate goal of Part 5 is to leave readers with a robust and full-featured command and control server, and the knowledge to go out and build their own unique C2s.
+Blog posts in this section will focus on a larger C2 project, using a Flask backend with NGINX HTTP server in a Docker Container, implementing SQLAlchemy ORM for botnet databasing, implementing a DNS server for Rogue DNS & tunneling, encrypt & package payloads for drive-by-downloads, and many more features. Front-end development will feature JavaScript and Jinja templates to create a botnet admin console.
 
 ---
 
-### **Part 6:  Using AI to Become Significantly More Dangerous**
+### **6)  Using AI to Become Significantly More Dangerous**
 
 
-Part 6 intends to provide readers with the tools and techniques to incorporate AI into their red-teaming and penetration testing workflow, to significantly boost their productivity and effectiveness. Areas of focus will include strategies for implementing AI into your research process, how to obtain the best results, an introduction to some  useful tools, and an overview of prompt-engineering.
-
-Included in this chapter will also be the final module for the C2 framework, an AI automated MalSpammer, however the code is intentionally broken to prevent misuse. This is a tool intended for red-team engagements that include phishing attacks on corporate emails. If it’s a tool you’d find a legitimate use for at work, by all means find the bug!
+I use AI everyday in my workflow. I consider GPT my proof reader, super Google, and coding co-pilot. I intend of developing posts regarding the tools and techniques so that they can incorporate AI into their red-teaming and penetration testing workflow, to significantly boost their productivity and effectiveness. Areas of focus will include strategies for implementing AI into your research process, how to obtain the best results, an introduction to some  useful tools, and an overview of prompt-engineering.
 
 ---
 
@@ -110,11 +100,11 @@ ___
 
 ---
 
-# **WORKING OUTLINE:**
+# **Blog/Project Outline:**
 
 ---
 
-# **Part 1: Preparation**
+# **1) Preparation**
 
 ---
 
@@ -246,7 +236,7 @@ ___
 
 ---
 
-# **Part 2: Reconnaissance**
+# **2) Reconnaissance**
 
 **MITRE / CKC:** Reconnaissance > Resource Development
 
@@ -306,7 +296,7 @@ Tasting notes:
 
 ---
 
-# Part 3: Arsenal
+# **3) Arsenal**
 
 Tasting note:
 
@@ -320,7 +310,7 @@ Tasting note:
 
 ---
 
-## **Potentially Unwanted Programs (PUPs)**
+## **3a) Potentially Unwanted Programs (PUPs)**
 
 **1) Droppers**
      
@@ -348,7 +338,7 @@ everse Shells
  
 ---
 
-## **Remote Access Tool**
+## **3b) Remote Access Tool**
 
 Tasting notes:
 
@@ -377,7 +367,7 @@ Tasting notes:
 
 ---
 
-## **Deny, Destroy, Alter, & Mine**
+## **3c) Deny, Destroy, Alter, & Mine**
 
 
 Tasting notes:
@@ -405,7 +395,7 @@ Tasting notes:
 
 ---
 
-# Part 4: Encryption and Covert Communications
+# 4) Encryption and Covert Communications
 
 **MITRE / CKC:** Reconnaissance > Resource Development > Defense Evasion > Collection > Command and Control > Exfiltration
 
@@ -440,7 +430,7 @@ Tasting notes:
 
 ---
 
-# **Part 5: Advanced Command & Control**
+# **4) Advanced Command & Control**
 
 **Mitre / CKC:** Actions on Objectives > Collection > C&C > Exploitation
 
