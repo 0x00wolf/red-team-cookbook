@@ -399,47 +399,47 @@ def consumer():
 	
 	    # if leftshift or rightshift & value is 0 (unpressed)
             if event_code == 42 and value == 0 or event_code == 54 and value == 0:
-            shift = False
+                shift = False
 
             # otherwise if leftshift or rightshift set shift to True
             elif event_code == 42 or event_code == 54:
-            shift = True
+                shift = True
 
-		# if capslock is pressed !capslock
-                elif event_code == 58 and value == 1:
-                    if caps_lock:
+            # if capslock is pressed !capslock
+            elif event_code == 58 and value == 1:
+                if caps_lock:
 			caps_lock = False
 		    else:
 			caps_lock = True
 	
-		# otherwise if a key is pressed
-		elif value == 1:
+            # otherwise if a key is pressed
+            elif value == 1:
 	
-		    # if neither capslock or shift
-		    if not shift and not caps_lock:
-			key = KEYMAP[event_code]
+                # if neither capslock or shift
+                if not shift and not caps_lock:
+                    key = KEYMAP[event_code]
 	
-		    # if just shift special symbols & capital letters
-		    elif shift and not caps_lock:
-			key = SHIFTED[event_code]
+                # if just shift special symbols & capital letters
+                elif shift and not caps_lock:
+                    key = SHIFTED[event_code]
+
+                # if just caps lock only allow capital letters & NOT special symbols
+                elif caps_lock and not shift:
+                    if 16 <= event_code <= 25 or 30 <= event_code <= 38 or 44 <= event_code <= 50:
+                        key = SHIFTED[event_code]
+                    else:
+                        key = KEYMAP[event_code]
 	
-		    # if just caps lock only allow capital letters & NOT special symbols
-		    elif caps_lock and not shift:
-			if 16 <= event_code <= 25 or 30 <= event_code <= 38 or 44 <= event_code <= 50:
-			    key = SHIFTED[event_code]
-			else:
-			    key = KEYMAP[event_code]
-	
-		    # if both allow special symbols & lowercase letters
-		    elif shift and caps_lock:
-			if 16 <= event_code <= 25 \
-				or 30 <= event_code <= 38 or 44 <= event_code <= 50:
-			    key = KEYMAP[event_code]
-			else:
-			    key = SHIFTED[event_code]
-	
-		    # pass the parsed data to the writer
-		    q2.put(key)
+                # if both allow special symbols & lowercase letters
+                elif shift and caps_lock:
+                    if 16 <= event_code <= 25 \
+			or 30 <= event_code <= 38 or 44 <= event_code <= 50:
+                        key = KEYMAP[event_code]
+                    else:
+                        key = SHIFTED[event_code]
+
+                # pass the parsed data to the writer
+                q2.put(key)
 
 
 def producer():
