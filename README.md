@@ -6,7 +6,7 @@
 
 ### A quick note before you continue:
 
-The Red Team Cookbook blog (RTCBb) & associated repository represent my own ongoing efforts to understand how malicious actors do bad things, in the interests of learning how to protect networks and organizations better. The following is an introduction to the project, sample code / sections, and the working outline for the material I plan on covering.
+The Red Team Cookbook blog (RTCBb) & associated repository represent my own ongoing efforts to understand how malicious actors do bad things, in the interests of learning how to protect networks and organizations better. The following is an introduction to the project, on overview of the areas of focus, and the working outline for the material I plan on covering.
 
 ---
 
