@@ -10,7 +10,7 @@ The Red Team Cookbook blog (RTCBb) & associated repository represent my own ongo
 
 ---
 
-# NEW POST: (Arsenal: Logging Global Keystrokes in Linux)[https://github.com/0x00wolf/red-team-cookbook/tree/main/Arsenal/Linux-Keyloggers]
+# NEW POST: [Arsenal: Logging Global Keystrokes in Linux](https://github.com/0x00wolf/red-team-cookbook/tree/main/Arsenal/Linux-Keyloggers)
 
 ___
 
