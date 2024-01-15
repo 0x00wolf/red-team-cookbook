@@ -1,6 +1,6 @@
-
-
 # **Potentially Unwanted Programs (PUPs) - Key Logging in Linux**
+
+![alt text](https://github.com/0x00wolf/red-team-cookbook/blob/main/imgs/github.jpeg)
 
 Malware performs unwanted or malicious actions on the target system or network. Including logging keystrokes, stealing credentials, dropping malware, exfiltrating data, or being used to flood a server with packets in a larger DDoS campaign. Malware is often disguised as legitimate or useful software, or bundled with other programs, to trick the user into installing or running it. Malware can also be delivered through phishing emails, drive-by downloads, or exploit kits, which take advantage of vulnerabilities in the target system or application. 
 
