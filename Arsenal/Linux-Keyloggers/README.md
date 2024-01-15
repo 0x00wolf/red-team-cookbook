@@ -8,7 +8,7 @@ With this in mind, as I have no malicious intent with the Malware that I program
 
 # **Disclaimer**
 
-Any program that logs key strokes globally has major security and privacy implications. Do not test the following unless you are using a device you own, and if so make any other users of that device aware immediately. The author does not condone the use of the following programs for the unlawful monitoring of other user's keystrokes. 
+Any program that logs key strokes globally has major security and privacy implications. Do not test the following unless you are using a device you own, and if so make any other users of that device aware immediately. The author does not condone the use of the following programs for the unlawful monitoring of other users' keystrokes. 
 
 # **First, Set up a Virtual Environments to Test your PUPs**
 
