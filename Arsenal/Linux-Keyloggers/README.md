@@ -334,7 +334,7 @@ For my solution, I used two lists to match keycodes to keys, and then depending 
 
 This keylogger will run out of the box on any Python 3 installation (root privileges are most likely required). It uses three threads and two queues. 
 
-1) The Producer thread fetches keyboard events in 24 byte portions and places them into the first queue. 
+1) The Producer thread fetches keyboard events into event struct sized portions and places them into the first queue. 
 
 2) The Consumer thread grabs an event from the first queue, parses the event into a keystroke, and places the keystroke into the second queue. This was the tricky part, handling state & user input.
 
