@@ -394,7 +394,6 @@ def consumer():
         (seconds, microseconds, event_type, event_code, value) = struct.unpack(STRUCT_FORMAT, event)
         # for debugging codes: # print(f"shift={shift}, code={event_code}, value={value}, event_type={event_type}")
 
-	# if event type == 1
         if event_type == 1:
 	
 	    # if leftshift or rightshift & value is 0 (unpressed)
