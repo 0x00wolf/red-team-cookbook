@@ -2,6 +2,7 @@
 
 ![alt text](https://github.com/0x00wolf/red-team-cookbook/blob/main/imgs/github.jpeg)
 
+
 Malware performs unwanted or malicious actions on the target system or network. Including logging keystrokes, stealing credentials, dropping malware, exfiltrating data, or being used to flood a server with packets in a larger DDoS campaign. Malware is often disguised as legitimate or useful software, or bundled with other programs, to trick the user into installing or running it. Malware can also be delivered through phishing emails, drive-by downloads, or exploit kits, which take advantage of vulnerabilities in the target system or application. 
 
 The title Malware holds a level of mystique that I believe is largely attributed to actions of its developers. In every case, Malware is performing a legitimate function, but for illegitimate reasons. Malware performs systems and network functions, utilizing operating system API calls, standard encryption techniques, and socket programming. A RAT that generates a zombie is a malicious system daemon, which performs a regular service without the user's consent, or working directly against their best interests.
@@ -450,8 +451,4 @@ except KeyboardInterrupt:
 Explanations are in the comments! That's it for this post.
 
 -0x00Wolf
-
-**or at Linus Torvald's Linux Kernel repo:** https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/include/uapi/linux/input-event-codes.h
-
-## Viewing Input Event Struct Event Codes & Values
 
