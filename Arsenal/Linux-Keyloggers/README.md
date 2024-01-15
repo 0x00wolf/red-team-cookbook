@@ -381,7 +381,7 @@ def recorder():
 
 
 def consumer():
-    """Parses the data from the keystrokes into a mapped character (or string) from the one of the two
+    """Parses the data from the keystrokes into a mapped character (or string) from one of the two
     keycode lists."""
     shift = False  # Boolean for Shift
     caps_lock = False   # Boolean for Caps Lock
