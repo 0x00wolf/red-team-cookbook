@@ -393,10 +393,14 @@ This tells the game that the next time Chrono receives experience to trigger a l
 ## Saving an Address
 If you have successfully altered a desired value, you can record the address so that you can alter it again. Otherwise you will have to repeat the entire process if you want to edit multiple values at the same time. Alternatively you could run multiple instances of scanmem in different terminals. 
 
+---
+
 #### Regarding the longevity of saved addresses:
 - The addresses you discovered will only be valid while Snes9x is left running. 
 - If you close & reopen Snes9x, the process will be alotted a new space in the computer's memory. 
 - The stored addresses will point to a location in the memory that does not pertain to the current instance of the program.
+
+---
 
 #### Demonstrating the scanmem's write Function
 In the following example from hacking Shadowrun, I have identified the address containg the value associated with Armitage's hit points. I use scanmem's write command to set a value for the hit points, rather than using the set command, which would change the value for all 3 matches:
@@ -456,6 +460,8 @@ Sometimes you will run into values that are suspciously difficult to locate in m
 
 This goes beyond low numbers that may be difficult to locate without knowing the length of the buffer the value is stored in. 
 
+---
+
 #### #karma
 
 I have personally struggled with editing Shadowrun's Karma value.
@@ -464,18 +470,23 @@ My understanding is that karma is relative to a hidden value, experience. I have
 
 My theory is that Karma is the result of subtracting modulus 8 from the value for experience, and then dividing the result by 8. I have tried to isolate this variable, but without walking through the program with a more sophisticated tool, I haven't been able to crack that puzzle... Yet.
 
+---
+
 #### Zelda's has multiple addresses for rupees
 
 Zelda has at least two addresses that pertain to the number of rupees displayed on screen.Placing a new value in one address causes the number of ruppees to count up to the new value. 
 
 Another address contains a value used to track the number of rupees available to the player for in-game purchases. Both numbers change what is displayed on screen, but only one contains the logic that can be manipulated to give the player unlimited rupees. 
 
+---
 
 #### Enter reverse-engineering
 
 Understanding these nuances requires a deep dive into the software's underlying mechanics and structure. Walking through a program in memory and being able to reconstruct its operation is what reverse engineers and low-level computing experts do. 
 
 Being able to reverse engineer malware and exploit critical vulnerabilties are some of the most elite skills a hacker can pursue. If script kiddies use other people's tools, and hackers make their own, the reverse engineer is the next step in the evolution.
+
+---
 
 #### Should I commit to learning very difficult things?
 If you connect passionately with the following points, the answer is likely yes:
@@ -486,6 +497,8 @@ If you connect passionately with the following points, the answer is likely yes:
 5) Attitude is no subsitute for competence.
 
 According to Eric S. Raymonds, one of the originators of the open source software movement, these are the fundamental elements of the hacker attitude. When I first read Eric S. Raymonds article, [How to Become a Hacker](), it set me on the path that I wake up excited for every day.
+
+---
 
 #### Where do you learn?
 
