@@ -508,7 +508,7 @@ Being able to reverse engineer malware or exploit critical vulnerabilties are so
 
 ---
 
-#### Should I commit to learning very difficult things?
+#### Should I commit to learning things that are difficult to learn?
 If you connect passionately with the following points, the answer is likely yes:
 1) The world is full of fascinating problems waiting to be solved.
 2) No problem should ever have to be solved twice.
