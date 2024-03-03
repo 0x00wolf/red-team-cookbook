@@ -6,6 +6,6 @@
 
 # Welcome to the Red Team Cookbook blog!
 
-The blog is housed in the Wiki for this repository. To jump to the main page, go here: [RTCb](https://github.com/0x00wolf/red-team-cookbook/wiki/Welcome-to-the-Red-Team-Cookbook)
+The blog is housed in the Wiki for this repository. To jump to the main page, go here: [RTCb](https://github.com/0x00wolf/red-team-cookbook/wiki/Welcome-to-the-Red-Team-Cookbook!)
 
 ___
