@@ -179,7 +179,7 @@ red         5730  0.0  0.0   9088  2432 pts/0    S+   17:06   0:00 grep --color=
 
 Differential analysis is a technique used in computer programming to compare the differences between memory snapshots taken at different points in time. This technique is commonly employed in debugging and forensic analysis to locate specific values stored in memory that are associated with a particular PID.
 
-In the case of video game hacking, we can use differential analysis to isolate values that we want to change. 
+#### In the case of video game hacking, we can use differential analysis to isolate values that we want to change. 
 
 The difficulty of isolating the value in memory is proprtional to the length of known values in bits. For example, finding the value 532,128 would be significantly easier than 1. 
 
@@ -187,15 +187,15 @@ A computer can convey the integer 1 in a single bit, whereas the number 532,128 
 
 Furthermore, the values 532128 may appear a number of times in a program's memory, but the number of occurences of the number 1 will be greater by a significant factor. 
 
-From the standpoint of probability: 
+#### From the standpoint of probability: 
 - The chance of 1 being the value of a random integer (0-9) is 1 / 10.
 - The chance of 542128 appearing in order in a series of 6 random integers is 1 / 10<sup>6</sup> or 1 / 1,000,000.
 
-My point isn't that using differential analysis is going to take a lot of probablistic math, because it absolutely won't. I am trying to illustrate why using a bigger value will always yield better results. It is due to the fact that larger values are less like to appear at random.
 
 #### No more math:
-In both cases the metholodolgy for applying differential analysis remains the same. You can employ the same tactics to edit values of different complexity, which only requires a little bit of basic addition and subtraction.
+My point isn't that using differential analysis is going to take a lot of probablistic math, because it absolutely won't. I am trying to illustrate why using a bigger value will always yield better results. It is due to the fact that larger values are less like to appear at random.
 
+In both cases the metholodolgy for applying differential analysis remains the same. You can employ the same tactics to edit values of different complexity, which only requires a little bit of basic addition and subtraction.
 
 #### Time to hack games and chew bubble gum...
 
