@@ -52,7 +52,7 @@ The only other prerequisite is that you are mildly comfortable working in Bash s
 
 ### To hack SNES games you will need a SNES:
 
-Unfortunately, collecting SNES consoles and games is to retro gaming collections what cryptocurrency is to financial portfolios. 
+Unfortunately, the cost of SNES consoles and games is prohibitively (one might say foolishly) high.
 
 Lets use an open source alternative instead: [Snes9x](https://www.snes9x.com/) 
 
