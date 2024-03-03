@@ -24,6 +24,6 @@ The RTCBb is my attempt to share my research projects. To programatically emulat
 
 # cat POSTS 
 
-[Logging Global Keystrokes in Linux](https://github.com/0x00wolf/red-team-cookbook/tree/main/Arsenal/Linux-Keyloggers)
+[Logging Global Keystrokes in Linux](https://github.com/0x00wolf/red-team-cookbook/tree/main/Linux-Keyloggers)
 
 ___
