@@ -25,5 +25,5 @@ The RTCBb is my attempt to share my research projects. To programatically emulat
 # cat POSTS 
 
 - [Logging Global Keystrokes in Linux](https://github.com/0x00wolf/red-team-cookbook/tree/main/Linux-Keyloggers)
-- [Hacking The SNES Stack For Fun and (in-game) Profit](https://github.com/0x00wolf/red-team-cookbook/main/hacking-SNES)
+- [Hacking The SNES Stack For Fun and (in-game) Profit](https://github.com/0x00wolf/red-team-cookbook/tree/main/hacking-SNES)
 ___
