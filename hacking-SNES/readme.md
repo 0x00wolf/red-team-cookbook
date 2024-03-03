@@ -95,7 +95,6 @@ The initial motivation for the Myrient project came from the authors shared feel
 - [Chrono Trigger](https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Chrono%20Trigger%20%28USA%29.zip)
 - [Secret of Mana](https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Secret%20of%20Mana%20%28USA%29.zip)
 - [Trials of Mana](https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Trials%20of%20Mana%20%28World%29%20%28Collection%20of%20Mana%29.zip)
-- [Final Fantasy IV]()
 - [Battletoads](https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Battletoads%20in%20Battlemaniacs%20%28USA%29.zip)
 - [Super Street Fighter II](https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Super%20Street%20Fighter%20II%20%28USA%29%20%28Rev%201%29.zip)
 - [Super Metroid](https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Super%20Metroid%20%28USA%2C%20Europe%29%20%28En%2CJa%29%20%28Virtual%20Console%2C%20Classic%20Mini%2C%20Switch%20Online%29.zip)
