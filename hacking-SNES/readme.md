@@ -212,7 +212,7 @@ The difficulty of isolating the value in memory is proprtional to the length of 
 
 A computer can convey the integer 1 in a single bit, whereas the number 532,128 requires 20 bits to represent. 
 
-Finding the integers [5, 3, 2, 1, 2, 8] in order in a program's memory space is definitely possible, but the odds of finding a single integer, 1, within the program's memory is astronomically greater. 
+Finding the integers [5, 3, 2, 1, 2, 8] in order in a program's memory space is definitely possible, but the odds of finding a single integer, 1, within the program's memory is exponentially greater. 
 
 ---
 
