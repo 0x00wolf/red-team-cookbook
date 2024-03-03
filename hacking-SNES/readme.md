@@ -273,13 +273,9 @@ Mark down the steps you took, and it should be trivial to repeat the process.
 
 In this example, I'm going to provide a literal value as the parameter that scanmem will use to search for matches. 
 
-For example, Link starts with 006 rupees, so I will provide scanmem with 006 as my parameter.
+For example, Link starts with 006 rupees, so I will provide scanmem with 006 as my parameter. At a binary level, this value tells scanmem to look for patterns of bits matching 0000000100. 
 
-At a binary level, this value tells scanmem to look for patterns of bits matching 0000000100. 
-
-**Note:** If you only provide the integer 6, you are telling scanmem to match patterns of bits matching 100. 
-
-As discussed [previously](#differential-analysis-as-it-applies-to-hacking-games), this will return a signicantly greater number of matches than 006.
+**Note:** If you only provide the integer 6, you are telling scanmem to match patterns of bits matching 100. As discussed [previously](#differential-analysis-as-it-applies-to-hacking-games), this will return a signicantly greater number of matches than 006.
 
 #### Give me the Loot:
 1) Run Snes9x and load a game. 
