@@ -84,7 +84,7 @@ The initial motivation for the Myrient project came from the authors shared feel
 ---
 
 
-### Top SNES rom tasting menu:
+### Links to some of the most popular SNES roms on Myrient:
 - [Shadownrun](https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Shadowrun%20%28USA%29.zip)
 - [Zelda - A Link to the Past](https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Legend%20of%20Zelda%2C%20The%20-%20A%20Link%20to%20the%20Past%20%28USA%29.zip)
 - [NBA Jam](https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/NBA%20Jam%20%28USA%29%20%28Rev%201%29.zip)
