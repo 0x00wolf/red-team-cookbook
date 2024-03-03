@@ -21,7 +21,7 @@ In this article, I'm going to show you how to hack SNES games for fun and in-gam
 5) [Capturing a Thought - scanmem](#capturing-a-thought)
 6) [Differential Analysis as it Applies to Hacking Games](#differential-analysis-as-it-applies-to-hacking-games)
 6) [How to Hack Games in 4 Steps](#how-to-hack-games-in-four-steps)
-7) [Example Hacks](#the-hack)
+7) [Example Hacks](#example-hacks)
 8) [Saving an Address](#saving-an-address)
 9) [Why I Want to be a Reverse Engineer and You Should Too](#why-i-want-to-be-a-reverse-engineer-and-you-should-too)
 
