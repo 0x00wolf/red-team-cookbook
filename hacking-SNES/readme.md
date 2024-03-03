@@ -30,7 +30,7 @@ In this article, I'm going to show you how to hack SNES games for fun and in-gam
 
 ## Prerequisites 
 
-I am using Arch Linux, so the example commands in this article will be Arch Linux specific in some cases. It's the best Linux repo (IMO). You should be able to easily find versions of the same software in the package manager for the Linux distrubtion that you use. If you use Windows or OSX, I suggest that this is a wonderful time to switch to Linux! You'll get a SNES and all of your favorite games as a bonus incentive.
+I am using Arch Linux, so the example commands in this article will be Arch Linux specific in some cases. It's the best Linux repo (IMO). You should be able to easily find versions of the same software in the package manager for the Linux distrubtion that you use. If you use Windows or OSX, I suggest that this is a wonderful time to switch to Linux! 
 
 The only other prerequisite is that you are mildly comfortable working in Bash shell.
 
