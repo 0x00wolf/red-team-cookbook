@@ -17,7 +17,7 @@ If you told a science fiction authors in the 1960s that half a century later hum
 
 We live in a new era of cybercrime. Adversaries are perpetrating financial crimes on a scale greater than any other criminals in history. Defenders need to be trained in the same manner as the criminals if they intend on preventing them from doing damage when, not if, they get into their networks.
 
-The RTCBb is my attempt to share my research projects. To programatically emulate the methods and techniques that advanced persistent threats (APTs) use at every stage of an attack. From enumeration and initial compromise, to establishing an advanced botnet command infrastructure. 
+The RTCBb is my attempt to share my research projects. To programatically emulate the methods and techniques that advanced persistent threats (APTs) use at every stage of an attack, and other hacky projects that I cook up.
 
 ---
 
