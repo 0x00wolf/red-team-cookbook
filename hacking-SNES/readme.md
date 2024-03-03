@@ -131,7 +131,7 @@ When a human performs a process, they are by necessity thinking. We may employ e
 
 Computers operate in the same manner. Data stored on the hard disk cannot be used to perform a dynamic action. You cannot execute data stored on disk, in the same manner in which we cannot drive a car by only employing a memory of driving a car in the past. We need to physically operate the vehicle, which requires our minds to think about what we are doing actively. I.e. remembering stepping on a break pedal, won't prevent you from rear ending someone stopped infront of you.
 
-**Memory as it relates to humans is the data that has been written to a computer's hard disk or SSD. Data that has been written to disk can only be read or overwritten, remaining static otherwise.**
+Memory as it relates to humans is the data that has been written to a computer's hard disk or SSD. Data that has been written to disk can only be read or overwritten, remaining static otherwise.
 
 #### Two roads diverged in a yellow wood
 
