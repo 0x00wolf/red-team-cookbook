@@ -101,7 +101,7 @@ The initial motivation for the Myrient project came from the authors shared feel
 ## scanmem
 
 
-Scanmem is a tool for scanning memory and editing values in memory. It's an Open Source tool available in the main repository of most Linux distributions.
+Scanmem is a tool for scanning and editing values in memory. It's an Open Source tool available in the main repository of most Linux distributions.
 
 To install scanmem on Arch Linux:
 
