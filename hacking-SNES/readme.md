@@ -212,7 +212,7 @@ The difficulty of isolating the value in memory is proprtional to the length of 
 
 A computer can convey the integer 1 in a single bit, whereas the number 532,128 requires 20 bits to represent. 
 
-Furthermore, the integers [5, 3, 2, 1, 2, 8] may appear a number of times in a program's memory, but the number of occurences of the number 1 will be greater by a significant factor. 
+Finding the integers [5, 3, 2, 1, 2, 8] in order in a program's memory space is definitely possible, but the odds of finding a single integer, 1, within the program's memory is astronomically greater. 
 
 ---
 
@@ -223,11 +223,11 @@ Furthermore, the integers [5, 3, 2, 1, 2, 8] may appear a number of times in a p
 ---
 
 #### No more math:
-My point isn't that using differential analysis is going to take a lot of probablistic math, because it absolutely won't. It's worth pointing out that values stored in a games buffers are probably not random values. 
+My point isn't that you need to manually calculate probabilities to perform differential analysis, because it absolutely doesn't. 
 
-I am trying to illustrate why using a bigger value will always yield better results. It is due to the fact that larger values are less like to appear at random.
+It's also worth pointing out that values stored in a games buffers are probably not random values. 
 
-In both cases the metholodolgy for applying differential analysis remains the same. You can employ the same tactics to edit values of different complexity, which only requires a little bit of basic addition and subtraction.
+My intention is to illustrate the fact that a more complex number is an easier needle to find in a haystack.
 
 ---
 
