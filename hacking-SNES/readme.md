@@ -54,7 +54,7 @@ The only other prerequisite is that you are mildly comfortable working in Bash s
 
 Unfortunately, collecting SNES consoles and games is to retro gaming collections what cryptocurrency is to financial portfolios. 
 
-Lets use an Open Source alternative instead. [Snes9x]() is a fantastic open source project, with a long life cycle
+Lets use an Open Source alternative instead. [Snes9x](https://www.snes9x.com/) is a fantastic open source project, with a long life cycle
 
 ```bash
 sudo pacman -S snes9x-gtk
