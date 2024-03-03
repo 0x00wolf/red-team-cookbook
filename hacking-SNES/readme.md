@@ -212,7 +212,7 @@ The difficulty of isolating the value in memory is proprtional to the length of 
 
 A computer can convey the integer 1 in a single bit, whereas the number 532,128 requires 20 bits to represent. 
 
-Furthermore, the integers [5,3,2,1,2,8] may appear a number of times in a program's memory, but the number of occurences of the number 1 will be greater by a significant factor. 
+Furthermore, the integers [5, 3, 2, 1, 2, 8] may appear a number of times in a program's memory, but the number of occurences of the number 1 will be greater by a significant factor. 
 
 ---
 
