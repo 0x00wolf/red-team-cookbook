@@ -133,6 +133,8 @@ Computers operate in the same manner. Data stored on the hard disk cannot be use
 
 Memory as it relates to humans is the data that has been written to a computer's hard disk or SSD. Data that has been written to disk can only be read or overwritten, remaining static otherwise.
 
+---
+
 #### Two roads diverged in a yellow wood
 
 Create two distinctions for yourself: 
