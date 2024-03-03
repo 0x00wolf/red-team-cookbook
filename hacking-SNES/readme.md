@@ -76,7 +76,7 @@ The initial motivation for the Myrient project came from the authors shared feel
 
 > Myrient is a portmanteau of the words "myriad" and "entertainment", referring to the countless amount of video game content that is difficult to access or no longer available legitimately.
 
-#### Note: You do not need to unzip roms from Myrient, just open them with Snes9x.
+**Note:** You do not need to unzip roms from Myrient, just open them with Snes9x.
 
 #### Now show your support for the Myriad project by downloading every SNES game you ever wanted!
 
