@@ -76,27 +76,38 @@ The initial motivation for the Myrient project came from the authors shared feel
 
 > Myrient is a portmanteau of the words "myriad" and "entertainment", referring to the countless amount of video game content that is difficult to access or no longer available legitimately.
 
-#### Show your support for the Myriad project by rescuing Zelda!
+#### Note: You do not need to unzip roms from Myrient, just open them with Snes9x.
+
+#### Now show your support for the Myriad project by downloading every SNES game you ever wanted!
 
 
 ---
 
 
-### My go to SNES games are:
-- Shadownrun
-- Zelda - A Link to the Past
-- NBA Jam
-- Harvest Moon
-- Super Star Wars + SSW TESB + SSW ROTJ
-- Chrono Trigger
-- Secret of Mana / Trials of Mana
-- Final Fantasy IV
-- Super Street Fighter II
-- Super Metroid
-- Super Mario World (1 & 2)
-- Star Fox 2
-- Sim City 
-- Contra III/IV
+### Top SNES rom tasting menu:
+- [Shadownrun](https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Shadowrun%20%28USA%29.zip)
+- [Zelda - A Link to the Past](https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Legend%20of%20Zelda%2C%20The%20-%20A%20Link%20to%20the%20Past%20%28USA%29.zip)
+- [NBA Jam](https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/NBA%20Jam%20%28USA%29%20%28Rev%201%29.zip)
+- [Harvest Moon](https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Harvest%20Moon%20%28USA%29.zip)
+- [Super Star Wars](https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Super%20Star%20Wars%20%28USA%29%20%28Rev%201%29.zip)
+- [Super Star Wars - The Empire Strikes Back](https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Super%20Star%20Wars%20-%20The%20Empire%20Strikes%20Back%20%28USA%29%20%28Rev%201%29.zip)
+- [Super Star Wars - Return of the Jedi](https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Super%20Star%20Wars%20-%20Return%20of%20the%20Jedi%20%28USA%29%20%28Rev%201%29.zip)
+- [Chrono Trigger](https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Chrono%20Trigger%20%28USA%29.zip)
+- [Secret of Mana](https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Secret%20of%20Mana%20%28USA%29.zip)
+- [Trials of Mana](https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Trials%20of%20Mana%20%28World%29%20%28Collection%20of%20Mana%29.zip)
+- [Final Fantasy IV]()
+- [Battletoads](https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Battletoads%20in%20Battlemaniacs%20%28USA%29.zip)
+- [Super Street Fighter II](https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Super%20Street%20Fighter%20II%20%28USA%29%20%28Rev%201%29.zip)
+- [Super Metroid](https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Super%20Metroid%20%28USA%2C%20Europe%29%20%28En%2CJa%29%20%28Virtual%20Console%2C%20Classic%20Mini%2C%20Switch%20Online%29.zip)
+- [Super Mario World](https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Super%20Mario%20World%20%28USA%29.zip)
+- [Super Mario World 2 - Yoshi's Island](https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Super%20Mario%20World%202%20-%20Yoshi%27s%20Island%20%28USA%29%20%28Rev%201%29.zip)
+- [Super Mario Kart](https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Super%20Mario%20Kart%20%28USA%29.zip)
+- [Super Mario RPG](https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Super%20Mario%20World%20%28USA%29.zip)
+- [SimCity](https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/SimCity%20%28USA%29.zip) 
+- [Contra III - The Alien Wars](https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Contra%20III%20-%20The%20Alien%20Wars%20%28USA%29.zip)
+- [Mortal Kombat](https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Mortal%20Kombat%20%28USA%29%20%28Rev%201%29.zip)
+- [Mortal Kombat II](https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Mortal%20Kombat%20II%20%28USA%29%20%28Rev%201%29.zip)
+- [Mortal Kombat III](https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Mortal%20Kombat%203%20%28USA%29.zip)
 
 
 ---
