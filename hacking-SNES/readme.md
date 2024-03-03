@@ -202,7 +202,9 @@ Furthermore, the values 532128 may appear a number of times in a program's memor
 
 
 #### No more math:
-My point isn't that using differential analysis is going to take a lot of probablistic math, because it absolutely won't. I am trying to illustrate why using a bigger value will always yield better results. It is due to the fact that larger values are less like to appear at random.
+My point isn't that using differential analysis is going to take a lot of probablistic math, because it absolutely won't. It's worth pointing out that values stored in a games buffers are probably not random values. 
+
+I am trying to illustrate why using a bigger value will always yield better results. It is due to the fact that larger values are less like to appear at random.
 
 In both cases the metholodolgy for applying differential analysis remains the same. You can employ the same tactics to edit values of different complexity, which only requires a little bit of basic addition and subtraction.
 
