@@ -524,7 +524,7 @@ According to Eric S. Raymonds, one of the originators of the open source softwar
 
 If you are interested in learning how to walk through stack frames, reverse engineer malware, and discover zero-day exploits, I highly recommend that you look into [Open Security Training](https://p.ost2.fyi).
 
-Knowledge I earned through completing OST courses allowed me to figure out the process I taught you to use in this article in a lot less time than it took me to write it!
+Knowledge I earned through completing OST courses allowed me to figure out the process I taught you to use in this article in a lot less time than it took me to write it! I am taking OST's OS Internals course next.
 
 
 
