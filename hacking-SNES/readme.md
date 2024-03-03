@@ -44,7 +44,7 @@ The only other prerequisite is that you are mildly comfortable working in Bash s
 
 1) [To hack SNES games you need a SNES](#to-hack-snes-games-you-will-need-a-snes)
 2) [Now you need all of the best SNES games](#now-you-need-all-of-the-best-snes-games)
-3) [My go-to SNES games](#my-go-to-snes-games-are)
+3) [My favorite SNES games circa 1997](#links-to-some-of-the-most-popular-snes-roms-on-myrient)
 
 
 ---
