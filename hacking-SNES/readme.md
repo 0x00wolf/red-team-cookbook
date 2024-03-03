@@ -229,7 +229,7 @@ My point isn't that you need to manually calculate probabilities to perform diff
 
 It's also worth pointing out that values stored in a games buffers are probably not random values.
 
-My intention is to illustrate the fact that a more complex number is an easier needle to find in a haystack.
+My intention is to illustrate the fact that as an object increases in size, or complexity in this case, it becomes easier to locate.
 
 ---
 
