@@ -8,7 +8,7 @@
 
 ## Introduction
 
-In this article, I'm going to show you how to hack SNES games for fun and in-game profit (rupees, nuyen, gold, etc). I will be using a laptop running Arch linux to demonstrate, but you can apply the same concepts to hacking any single player game on any platform, provided you have the necessary tools.
+In this article, I'm going to show you how to hack SNES games for fun and in-game profit (rupees, nuyen, gold, etc). I will be using a laptop running Arch linux to demonstrate, but you can apply the same concepts to hacking any single player game on any platform.
 
 ---
 
