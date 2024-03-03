@@ -161,6 +161,8 @@ On a technical level, a process is a unit of work that is being executed or mana
 
 Each process has its own space in the computer's memory, execution state, and system resources, which are allocated to processes by the operating system. Processes allow the computer to multitask, running multiple programs concurrently, managing the execution of each program.
 
+---
+
 **TLDR: If we can locate the space assigned to a process in memory, we can start hunting for values that are of interest to us associated with that process.**
 
 ---
