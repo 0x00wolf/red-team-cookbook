@@ -127,9 +127,9 @@ Scanmem also has an affiliated GUI based tool, GameConqueror, but I've never use
 
 #### Human Memory, Natures HD
 
-When humans perform a process, we are thinking. We may employ experience, which is the memory of performing that process previously. However, performing an action requires active thought, and is not an exercise in recollection alone.
+When a human performs a process, they are by necessity thinking. We may employ experience, which is the memory of performing that process previously. However, performing an action requires active thought, and cannot be accomplished through recollection alone.
 
-Computers operate in the same manner. Data stored on the hard disk cannot be used to perform a dynamic action. You cannot execute data stored on disk, in the same manner in which we cannot drive a car by only employing a memory of driving a car in the past. We need to physically operate the vehicle, which requires our minds to think about what we are doing actively.
+Computers operate in the same manner. Data stored on the hard disk cannot be used to perform a dynamic action. You cannot execute data stored on disk, in the same manner in which we cannot drive a car by only employing a memory of driving a car in the past. We need to physically operate the vehicle, which requires our minds to think about what we are doing actively. I.e. remembering stepping on a break pedal, won't prevent you from rear ending someone stopped infront of you.
 
 **Memory as it relates to humans is the data that has been written to a computer's hard disk or SSD. Data that has been written to disk can only be read or overwritten, remaining static otherwise.**
 
@@ -151,11 +151,8 @@ Each process has its own space in the computer's memory, execution state, and sy
 
 ## Capturing a Thought
 
-To hack a game, we need to simply change it's thoughts. Albeit largely a topic for science fiction (or Neuralink) for a human, to change a computers thoughts is a trivial task.
+Albeit largely a topic for science fiction (or Neuralink) for humans, to rewrite a computers memory is a trivial task. If we can locate a value we are interested in within the computers memory, we can simply put a new value in its place.
 
-First, we need to locate the process running Snes9x.
-
-To locate a running process on Linux we can use `ps`. We can pipe the results of `ps` to `grep` and immediately figure out Snes9x process identification number (PID). 
 
 #### First, run Snes9x:
 
@@ -164,6 +161,8 @@ snes9x-gtk
 ```
 
 #### Next, locate Snes9x's process identification number (PID).
+
+To locate a running process on Linux we can use `ps`. We can pipe the results of `ps` to `grep` and immediately figure out Snes9x process identification number (PID). 
 
 ```bash
 ps aux | grep snes
