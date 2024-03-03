@@ -125,11 +125,17 @@ Scanmem also has an affiliated GUI based tool, GameConqueror, but I've never use
 
 ## Thinking About Thoughts
 
-When humans perform a process, we are thinking. We may employ experience, which is the memory of performing that process previously. The act of doing something requires active thought for a human.
+#### Human Memory, Natures HD
 
-Computers operate similarly to humans. Memories in human terms, are data stored on a computer's hard disk or SSD. Data that has been written to disk can only be read or overwritten, and remains static otherwise. 
+When humans perform a process, we are thinking. We may employ experience, which is the memory of performing that process previously. However, performing an action requires active thought, and is not an exercise in recollection.
 
-Create the distinction for yourself that memory as it pertains to humans equates to a storage disk for computers. A computer stores its thoughts within random access memory (memory). When a computer reads data from a disk into memory, the computer is converting memories into a collection of actionable thoughts - a process.
+Computers operate in the same manner. Data stored on the hard disk cannot be used to perform any dynamic action, in the same manner in which we cannot drive a car by only employing the memory of driving a car, without physically operating the vehicle. 
+
+Therefore, memory as it relates to humans is the data that has been written to a computer's hard disk or SSD. Data that has been written to disk can only be read or overwritten, remaining static otherwise. 
+
+#### Two roads diverged in a yellow wood
+
+Create the distinction for yourself that memory as it pertains to humans equates to data that has been written to disk for computers. A computer stores its thoughts within random access memory (memory). When a computer reads data from a disk into memory, the computer is converting memories into a collection of actionable thoughts - a process.
 
 On a technical level, a process is a unit of work that is being executed or managed by the operating system. The process consists of the program's code and data, as well as any additional resources for the program to run successfully. 
 
