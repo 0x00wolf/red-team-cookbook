@@ -1,4 +1,4 @@
-# Hacking the SNES Stack for Fun and (in-game) Profit
+# Hacking The SNES Stack For Fun And (in-game) Profit
 
 ![Shadowrun for SNES hacked](./imgs/hackgam.png)
 
