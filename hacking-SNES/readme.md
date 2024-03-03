@@ -131,17 +131,21 @@ When humans perform a process, we are thinking. We may employ experience, which 
 
 Computers operate in the same manner. Data stored on the hard disk cannot be used to perform a dynamic action. You cannot execute data stored on disk, in the same manner in which we cannot drive a car by only employing a memory of driving a car in the past. We need to physically operate the vehicle, which requires our minds to think about what we are doing actively.
 
-**TLDR:** Memory as it relates to humans is the data that has been written to a computer's hard disk or SSD. Data that has been written to disk can only be read or overwritten, remaining static otherwise. 
+**Memory as it relates to humans is the data that has been written to a computer's hard disk or SSD. Data that has been written to disk can only be read or overwritten, remaining static otherwise.**
 
 #### Two roads diverged in a yellow wood
 
-Create the distinction for yourself that memory as it pertains to humans equates to data that has been written to disk for computers. A computer stores its thoughts within random access memory (memory). When a computer reads data from a disk into memory, the computer is converting memories into a collection of actionable thoughts - a process.
+Create two distinctions for yourself: 
+1) Memory as it pertains to humans equates to data that has been written to disk for computers.
+2) Thoughts as they pertain to a human are called memory for a computer.
+
+A computer stores its thoughts within random access memory (memory). When a computer reads data from a disk into memory, the computer is converting memories into a collection of actionable thoughts - a process.
 
 On a technical level, a process is a unit of work that is being executed or managed by the operating system. The process consists of the program's code and data, as well as any additional resources for the program to run successfully. 
 
 Each process has its own space in the computer's memory, execution state, and system resources, which are allocated to processes by the operating system. Processes allow the computer to multitask, running multiple programs concurrently, managing the execution of each program.
 
-**TLDR:** If we can locate the space assingned to a process in memory, we can start hunting for values that are of interest to us associated with that process.
+**If we can locate the space assingned to a process in memory, we can start hunting for values that are of interest to us associated with that process.**
 
 ---
 
