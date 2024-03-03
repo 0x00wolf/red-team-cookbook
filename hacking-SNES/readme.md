@@ -23,7 +23,7 @@ In this article, I'm going to show you how to hack SNES games for fun and in-gam
 6) [How to Hack Games in 4 Steps](#how-to-hack-games-in-four-steps)
 7) [Example Hacks](#example-hacks)
 8) [Saving an Address](#saving-an-address)
-9) [Why I Want to be a Reverse Engineer and You Should Too](#why-i-want-to-be-a-reverse-engineer-and-you-should-too)
+9) [Why I Want to be a Reverse Engineer and Maybe You Should Too](#why-i-want-to-be-a-reverse-engineer-and-you-should-too)
 
 
 ---
@@ -358,7 +358,7 @@ We will tell `scanmem` to look for a specific value. For further searches, we wi
 ## Super Fast Levelling in Chrono Trigger
 I would immediately ask: "Why can’t you level immediately?"
 
-To explore the answer, see: [Why I Want to be a Reverse Engineer, and You Should Too](#why-i-want-to-be-a-reverse-engineer-and-you-should-too)
+To explore the answer, see: [Why I Want to be a Reverse Engineer, and Maybe You Should Too](#why-i-want-to-be-a-reverse-engineer-and-maybe-you-should-too)
 
 
 #### Returning to Chrono Trigger:
@@ -461,7 +461,7 @@ You can then use a spell that you know the mana cost of. You can search for buff
 ---
 
 
-## Why I Want to be a Reverse Engineer and You Should Too
+## Why I Want to be a Reverse Engineer and Maybe You Should Too
 
 ---
 #### Tricksy values:
