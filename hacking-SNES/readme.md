@@ -268,28 +268,28 @@ At a binary level, this value tells scanmem to look for patterns of bits matchin
 As discussed [previously](#differential-analysis-as-it-applies-to-hacking-games), this will return a signicantly greater number of matches than 006.
 
 #### Give me the Loot:
-- Run Snes9x and load a game. 
-- Identify an in-game value that you want to change.
-- Identify the current PID of Snes9x:
+1) Run Snes9x and load a game. 
+2) Identify an in-game value that you want to change.
+3) Identify the current PID of Snes9x:
     - `ps aux | grep snes`
-- Run scanmem as root:
+4) Run scanmem as root:
     - `sudo scanmem`
-- Attach scanmem to Snes9x (example PID: 1764):
+5) Attach scanmem to Snes9x (example PID: 1764):
     - `pid 1764`
-- Search for matches containing the value you identified (example: 006):
+6) Search for matches containing the value you identified (example: 006):
     - `006`
-- You find 126,847 matches.
-- Return to the game and cause the value to change manually.
-- Return to the terminal running scanmem and input the updated value (example: 007):
+7) You find 126,847 matches.
+8) Return to the game and cause the value to change manually.
+9) Return to the terminal running scanmem and input the updated value (example: 007):
     - `007`
-- You are left with 36 matches:
-- Return to the game and manually cause the value to change.
-- Return to the terminal running scanmem and input the updated value (example: 012):
+10) You are left with 36 matches:
+11) Return to the game and manually cause the value to change.
+12) Return to the terminal running scanmem and input the updated value (example: 012):
     - `012`
-- You are left with two matches
-- Writing to the first buffer causes the rupees to count up on the screen sequentially, but does not have a permanent effect on the total number of rupees in the players inventory.
+13) You are left with two matches
+14) Writing to the first buffer causes the rupees to count up on the screen sequentially, but does not have a permanent effect on the total number of rupees in the players inventory.
     - `write i16 568b984e6444 999`
-- Writing to the second buffer changes the number of rupees in Links inventory to the desired number permanently.
+15) Writing to the second buffer changes the number of rupees in Links inventory to the desired number permanently.
     - `write i16 568b984e6444 999`
 - Congratulations, you have 999 rupees.
 
@@ -297,7 +297,7 @@ As discussed [previously](#differential-analysis-as-it-applies-to-hacking-games)
 ![Unlimited Rupees in A Link to the Past 1](./imgs/zelrupee1.png)
 #### Search for the identified value with scanmem, then manually update the value in game:
 ![Unlimited Rupees in A Link to the Past 2](./imgs/zelrupee2.png)
-#### After narrowing down your matches, test the effect of writing new values to the buffers you have isolated:
+#### After narrowing down your matches, test the effect of writing new values to the addresses you have isolated:
 ![Unlimited Rupees in A Link to the Past 4](./imgs/rupee4.png)
 #### 999 Rupees, but a bomb ain't one!
 
@@ -312,37 +312,35 @@ In this example we will use a slightly different strategy for locating our addre
 
 We know that in Zelda the maximum number of bombs or arrows a player can have at any given time is 99. 
 
-We could make the assumption that the buffer is the same length as the buffer for rupees, but that may or may not be correct. In most coding languages, you have to declare a variable's type (int, float, char*, etc), and allocate space in memory. In a language like Python, all of these elements are abstracted. 
 
-For game hacking, we care about how variables are stored in memory. When Zelda was made memory space was at a far greater premium than in the cheapest cellphone available in 2024. Modern CPUs utilize 64-bit architecture, whereas the SNES has 16-bit architecture.
-
-All of that aside, because we are looking for a lower number, we will tell scanmem to look for a specific value, and for further searches, we will tell it to look for values that have depleted by a specific value since our last snapshot.
+We will tell `scanmem` to look for a specific value. For further searches, we will tell `scanmem` to look for values that have depleted by a specific amount since our previous snapshot.
 
 #### Getting down to hacking:
-- While playing the Legend of Zelda - A Link to the Past (Zelda):
+1) While playing the Legend of Zelda - A Link to the Past (Zelda):
     - `snes9x-gtk`
-- You look up Snes9x's PID.
+2) You look up Snes9x's PID.
     - `ps aux | grep snes`
-- You run scanmem as root.
+3) You run scanmem as root.
     - `sudo scanmem`
-- You input Snes9x's PID into scanmem.
+4) You input Snes9x's PID into scanmem.
     - `pid 1337`
-- You know that the maximum bombs a player can have at one time is 99.
-- You currently have 11 bombs.
-- You instruct scanmem the memory allocated to Zelda for values that match 11. 
+5) You know that the maximum bombs a player can have at one time is 99.
+6) You currently have 11 bombs.
+7) You instruct scanmem the memory allocated to Zelda for values that match 11. 
     - `11`
-- You find 133,012 values in the games segment of memory that match 11. 
-- You place a bomb. You now have 10 bombs.
-- You instruct scanmem to search for matches reduced by 1 since the last snapshot.
+8) You find 133,012 values in the games segment of memory that match 11. 
+9) You place a bomb. You now have 10 bombs.
+10) You instruct scanmem to search for matches reduced by 1 since the last snapshot.
     - `- 1`
-- Scanmem returns 165 matches. 
-- You place a bomb. You now have 09  bombs.
-- You repeat the process and receive 1 match.
+11) Scanmem returns 165 matches. 
+12) You place a bomb. You now have 09  bombs.
+13) You repeat the process and receive 1 match.
     - `- 1`
-- Now you have 99 bombs.
+14) Now you have 99 bombs.
     - `set 99`
-- The same process works for arrows!
+15) The same process works for arrows!
 
+#### Steps 8 through 14:
 ![Hacking bombs in Zelda](./imgs/hackbombs.png)
 
 ---
@@ -384,10 +382,10 @@ Chrono Trigger has an additional stat that dictates the amount of experience req
 
 This tells the game that the next time Chrono receives experience to trigger a level up.
 
+#### Searching for values matching 2691:
 ![Chrono Trigger Level Hack 1](./imgs/ct2.png)
-![Chrono Trigger Level Hack 2](./imgs/ct3.png)
-![Chrono Trigger Level Hack 3](./imgs/ct4.png)
-
+#### Narrowing it down and finding the correct address:
+![Chrono Trigger Level Hack 2](./imgs/ct4.png)
 
 ---
 
@@ -404,7 +402,7 @@ If you have successfully altered a desired value, you can record the address so 
 
 ---
 
-#### Demonstrating the scanmem's write Function
+#### Demonstrating scanmem's write function
 In the following example from hacking Shadowrun, I have identified the address containg the value associated with Armitage's hit points. I use scanmem's write command to set a value for the hit points, rather than using the set command, which would change the value for all 3 matches:
 
 ```bash
@@ -426,11 +424,11 @@ Note you can cause a buffer overrun by inputting a value larger than the buffer 
 *The variables type and length in bytes is the final value contained within [] in the bash code snippet above. I8 means integer 8 bits in length.
 
 
-##### Before writing to the address:
+#### Before writing to the address:
 
 ![Write hit points](./imgs/hackshadowrunwritebuff.png)
 
-##### After writing to the address:
+#### After writing to the address:
 
 ![Write hit points 2](./imgs/hackshadowrunwritebuff2.png)
 
@@ -456,37 +454,47 @@ You can then use a spell that you know the mana cost of. You can search for buff
 ## Why I Want to be a Reverse Engineer and You Should Too
 
 ---
+#### Tricksy values:
 
-#### Tricksy Values
+In most cases, the technique of searching for a specific value and changing it will have the desired effect, but sometimes the effects may be surprising even if we have changed the desired value in-game.
+
+For this method of game hacking, we care about how variables are stored in memory. We ant to find them and edit them. But what happens when the value is being used in a function that we don't know about to do something we can't see? 
+
 Sometimes you will run into values that are suspciously difficult to locate in memory regardless of your expertise at applying differential analysis. 
 
-This goes beyond low numbers that may be difficult to locate without knowing the length of the buffer the value is stored in. 
-
----
-
-#### #karma
-
-I have personally struggled with editing Shadowrun's Karma value.
-
-My understanding is that karma is relative to a hidden value, experience. I have read that standard enemies typically give between 1-2 experience, and bosses significantly more. It takes 8 experience points to generate 1 karma.
-
-My theory is that Karma is the result of subtracting modulus 8 from the value for experience, and then dividing the result by 8. I have tried to isolate this variable, but without walking through the program with a more sophisticated tool, I haven't been able to crack that puzzle... Yet.
+This goes beyond low numbers that are difficult to locate without knowing the length of the buffer they are stored in. 
 
 ---
 
 #### Zelda's has multiple addresses for rupees
 
-Zelda has at least two addresses that pertain to the number of rupees displayed on screen.Placing a new value in one address causes the number of ruppees to count up to the new value. 
+Zelda has at least two addresses that pertain to the number of rupees displayed on screen. 
 
-Another address contains a value used to track the number of rupees available to the player for in-game purchases. Both numbers change what is displayed on screen, but only one contains the logic that can be manipulated to give the player unlimited rupees. 
+Placing a new value in one address causes the number of rupees to count up or down on the display, but after the visual effect is finished you are left with the same number of rupees that you started with. The other value contains the total number of rupees in the player's inventory.
+
+Both numbers change what is displayed on screen, but only one contains logic that can be manipulated to change the number of rupees in the player's inventory permanently. 
+
+---
+
+#### karma
+
+I have personally struggled with editing Shadowrun's Karma value.
+
+My understanding is that karma is relative to a hidden value, experience. I have read that standard enemies typically give between 1-2 experience, and bosses significantly more. It takes 8 experience points to generate 1 karma.
+
+My theory is that Karma is the result of subtracting modulus 8 from the value for experience, and then dividing the result by 8. I have tried to isolate this variable, but without walking through the program with a more sophisticated tool, I haven't been able to crack that puzzle.
+
+That is not to say that I haven't narrowed it down to a single match, because I have multiple times, through different methods. It just seems to have no effect in game. 
+
+It's possible the times I have discovered a single match, it's a random variable with the same value that has undergone the same value changes. Perhaps somewhere a pixel is changing shades imperceptibly with my edits. Regardless, my karma remains the same.
 
 ---
 
 #### Enter reverse-engineering
 
-Understanding these nuances requires a deep dive into the software's underlying mechanics and structure. Walking through a program in memory and being able to reconstruct its operation is what reverse engineers and low-level computing experts do. 
+To truly understand these nuances requires a deep dive into the software's underlying mechanics and structure. Walking through a program in memory and being able to reconstruct its operation is what reverse engineers and low-level computing experts do. 
 
-Being able to reverse engineer malware and exploit critical vulnerabilties are some of the most elite skills a hacker can pursue. If script kiddies use other people's tools, and hackers make their own, the reverse engineer is the next step in the evolution.
+Being able to reverse engineer malware or exploit critical vulnerabilties are some of the most elite skills a hacker can pursue. If script kiddies use other people's tools, and hackers make their own, the reverse engineer is the next step in the evolution.
 
 ---
 
