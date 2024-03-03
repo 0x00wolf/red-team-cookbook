@@ -197,7 +197,7 @@ red         5730  0.0  0.0   9088  2432 pts/0    S+   17:06   0:00 grep --color=
 - The first numeric value on the first line is the PID for Snes9x.
 - The second line of output is the process information for `grep`.
 
-**In the example, the PID for snes9x-gtk is: 5703**
+**With the PID for snes9x-gtk in-hand, 5703, we are are ready to start hunting for values we want to change.**
 
 
 ---
