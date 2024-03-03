@@ -151,7 +151,7 @@ Each process has its own space in the computer's memory, execution state, and sy
 
 ## Capturing a Thought
 
-Albeit largely a topic for science fiction (or Neuralink) for humans, to rewrite a computers memory is a trivial task. If we can locate a value we are interested in within the computers memory, we can simply put a new value in its place.
+Albeit largely a topic for science fiction (or Neuralink) for humans, to rewrite a computer's memory is a trivial task. If we can locate a value we are interested in within the computer's memory, we can simply put a new value in its place.
 
 
 #### First, run Snes9x:
