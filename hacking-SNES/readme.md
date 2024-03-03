@@ -48,7 +48,7 @@ The only other prerequisite is that you are mildly comfortable working in Bash s
 ---
 
 
-#### To hack SNES games you will need a SNES:
+### To hack SNES games you will need a SNES:
 
 Unfortunately, collecting SNES consoles and games is to retro gaming collections what cryptocurrency is to financial portfolios. 
 
@@ -62,7 +62,7 @@ sudo pacman -S snes9x-gtk
 ---
 
 
-#### Now you need all of the best SNES games:
+### Now you need all of the best SNES games:
 
 If only there was a safe repository of high quality classic SNES games for free...
 
@@ -72,13 +72,13 @@ The initial motivation for the Myrient project came from the authors shared feel
 
 > Myrient is a portmanteau of the words "myriad" and "entertainment", referring to the countless amount of video game content that is difficult to access or no longer available legitimately.
 
-**Show your support for the Myriad project by rescuing Zelda!**
+#### Show your support for the Myriad project by rescuing Zelda!
 
 
 ---
 
 
-#### My go to SNES games are:
+### My go to SNES games are:
 - Shadownrun
 - Zelda - A Link to the Past
 - NBA Jam
